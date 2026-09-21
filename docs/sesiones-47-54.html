@@ -1,0 +1,375 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Guía respondida · Sesiones 47–54 · BioCode</title><link rel="icon" href="../assets/icons/favicon.svg"><link rel="stylesheet" href="documentos.css"><script defer src="documentos.js"></script></head><body><div class="doc-toolbar"><a href="interno.html#documentacion">← BioCode · Documentación</a><button type="button" data-print>Imprimir / Guardar PDF</button></div><main><div class="doc-label">BioCode / Ciencia y Tecnología / 5.º de secundaria</div><h1>Guía respondida · Sesiones 47–54</h1>
+<p>Se conservan las preguntas y consignas proporcionadas por el equipo en su orden original. Se distinguen diseño propuesto, resultados técnicos y evidencia real pendiente.</p>
+<h2>SESIÓN 47: Identificación del problema abstracto de genética molecular y selección de la solución tecnológica.</h2>
+<p><strong>Propósito de la sesión:</strong> Delimitar la dificultad de comprender la síntesis de proteínas y los efectos mutagénicos a escala celular en la I.E. N.° 1146, definiendo los requerimientos técnicos y pedagógicos de un simulador tridimensional interactivo.</p>
+<h3>PASO 1: CARÁTULA</h3>
+<p><strong>Título del proyecto enfocado en la biología molecular y bioingeniería simulada.</strong></p>
+<p>BioCode: Simulador Interactivo de Síntesis Proteica y Mutaciones. Solución híbrida de biología molecular y bioingeniería simulada: web y modelo tridimensional manipulable. No se fabrican biomoléculas reales.</p>
+<p><strong>Datos informativos completos del equipo y la I.E.</strong></p>
+<ul>
+<li>Integrantes: Santiago Rivas y Joseph Valderrama.</li>
+<li>Institución: I.E. N.° 1146 “República del Paraguay”.</li>
+<li>Grado: 5.º de secundaria. Área: Ciencia y Tecnología.</li>
+<li>Sección: __________. Docente: __________.</li>
+<li>Fecha de presentación: __________. Año lectivo: __________.</li>
+<li>Los datos no proporcionados se completan por el equipo.</li>
+</ul>
+<h3>PASO 2: INTRODUCCIÓN (Contexto e importancia)</h3>
+<p><strong>1. ¿De qué manera hábitos no saludables o radiación UV pueden interferir en la síntesis de enzimas y tejidos?</strong></p>
+<p>Exposiciones como humo de tabaco o radiación UV pueden dañar ADN. Si un cambio persiste en un gen o su regulación, puede alterar cantidad o secuencia de proteínas, incluidas enzimas, y afectar funciones celulares y mantenimiento de tejidos. El daño también puede repararse; no toda exposición causa una mutación perjudicial. La nutrición insuficiente puede limitar nutrientes necesarios para síntesis y reparación sin equivaler a mutación. BioCode ilustra una sustitución, no predice efectos clínicos ni modela tejidos.</p>
+<p><strong>2. ¿Por qué es crucial comprender el código genético para prevenir patologías moleculares y promover la fotoprotección?</strong></p>
+<p>Permite explicar por qué un cambio puede modificar una proteína y fundamentar decisiones preventivas. Conocer el código por sí mismo no evita enfermedades; no todas las patologías moleculares son prevenibles. Sombra, ropa, sombrero y protección solar adecuada reducen exposición UV, sin garantizar ausencia de daño. La <a href="cartilla-salud.html">cartilla</a> conecta conocimiento y decisiones.</p>
+<p><strong>3. ¿Qué mitos existen sobre las mutaciones genéticas o la alimentación en la regeneración física?</strong></p>
+<p>Ejemplos para discutir: “toda mutación causa enfermedad”, “una exposición al sol siempre produce una mutación perjudicial”, “un alimento milagroso repara cualquier mutación” y “comer más proteínas regenera cualquier tejido”. Son afirmaciones incorrectas: los efectos dependen del contexto; una alimentación equilibrada aporta nutrientes, pero no borra selectivamente mutaciones ni asegura regeneración ilimitada. No se afirma haber encuestado al aula sobre estos mitos.</p>
+<p><strong>Delimitación:</strong> necesidad de recursos manipulables para visualizar transcripción, traducción y sustituciones en 5.º de la I.E.; la frecuencia de la dificultad se diagnosticará. Requerimos secuencias intercambiables, orientaciones, código estándar, STOP correcto, A/P/E, entradas validadas y acceso móvil/PC. La maqueta aporta tridimensionalidad; la web representa el proceso esquemáticamente.</p>
+<h2>SESIÓN 48: Sustentamos el proceso de transcripción del ADN a ARN mensajero dentro del núcleo celular.</h2>
+<p><strong>Propósito de la sesión:</strong> Sustentar cómo la información contenida en el ADN nuclear se transcribe en ARN mensajero mediante la acción enzimática de la ARN polimerasa para establecer la lógica de codificación del simulador.</p>
+<h3>PASO 3: INTRODUCCIÓN</h3>
+<p><strong>1. Desoxirribosa vs. Ribosa, Timina vs. Uracilo.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Aspecto</th>
+<th>ADN</th>
+<th>ARN</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Azúcar</td>
+<td>Desoxirribosa: H en carbono 2′</td>
+<td>Ribosa: OH en carbono 2′</td>
+</tr>
+<tr>
+<td>Bases</td>
+<td>A, T, C, G</td>
+<td>A, U, C, G</td>
+</tr>
+<tr>
+<td>Base distintiva</td>
+<td>Timina</td>
+<td>Uracilo</td>
+</tr>
+<tr>
+<td>Organización habitual</td>
+<td>Doble cadena</td>
+<td>Una cadena con plegamientos locales</td>
+</tr>
+<tr>
+<td>Función</td>
+<td>Conserva información genética</td>
+<td>ARNm lleva información, ARNt transporta aminoácidos, ARNr integra el ribosoma</td>
+</tr>
+</tbody></table>
+<p>Timina y uracilo se aparean con adenina. El ARN no es ADN incompleto.</p>
+<p><strong>2. ¿Cómo actúa la ARN polimerasa leyendo la hebra molde (3&#39; a 5&#39;) y formando el ARNm maduro que sale del núcleo?</strong></p>
+<p>Lee molde 3′→5′ y sintetiza ARN complementario 5′→3′. En eucariotas produce pre-ARNm, cuya maduración incluye caperuza 5′, splicing que elimina intrones y une exones y, generalmente, cola poli-A. Intervienen otras maquinarias; no hace por sí sola todo el procesamiento. El ARNm procesado puede exportarse por poros nucleares. BioCode representa una región procesada sin intrones.</p>
+<ul>
+<li>ADN codificante: 5′-ATG AAA GCT TTT TAA-3′; sustituir T→U.</li>
+<li>ADN molde: 3′-TAC TTT CGA AAA ATT-5′; A→U, T→A, C→G, G→C.</li>
+<li>ARNm: 5′-AUG AAA GCU UUU UAA-3′.</li>
+</ul>
+<h3>PASO 4: DETERMINACIÓN DE LA ALTERNATIVA DE SOLUCIÓN TECNOLÓGICA</h3>
+<p><strong>1. ¿Por qué los gráficos estáticos del libro no permiten visualizar los errores de lectura del código genético?</strong></p>
+<p>Los gráficos sí pueden representar errores, pero no permiten modificar y ejecutar una secuencia ni manipular el proceso. BioCode complementa esa limitación. Una mutación es un cambio de secuencia, distinto de un error transitorio de lectura del ribosoma: aquí se simula la traducción correcta de secuencias normales o mutadas.</p>
+<p><strong>2. ¿Construirán un Simulador interactivo mecánico-magnético de codón-anticodón y enlace peptídico o un Modelo de electro-ribosoma con detección de mutaciones por código de colores?</strong></p>
+<p>Elegimos la alternativa mecánica de codón–anticodón y enlace peptídico, complementada con la web. Cartón, velcro de soporte y llaves geométricas permiten trabajar sin comprar imanes o electrónica. No construiremos un electro-ribosoma en esta versión. Letras y formas complementan colores; la web calcula los resultados. La selección reduce complejidad y costo.</p>
+<p><strong>3. Expliquen la viabilidad pedagógica y la capacidad del modelo para simular secuencias de nucleótidos de forma intercambiable.</strong></p>
+<p>Las tiras y tarjetas desmontables permiten reemplazar AAA por CAA sin reconstruir el ribosoma. La web admite hasta 600 bases y verifica codones, anticodones y sustituciones. La maqueta facilita exposición grupal sin pantalla. Presupuesto objetivo S/10–20 según recursos disponibles; viabilidad real y aprendizaje se medirán. La comparación entre maqueta estática, electrónica, software e híbrida está en el <a href="proyecto.html">informe</a>.</p>
+<h2>SESIÓN 49: Explicación de la traducción en los ribosomas y el impacto de mutaciones.</h2>
+<p><strong>Propósito de la sesión:</strong> Argumentar la relación entre el código genético (codones del ARNm), la transferencia de aminoácidos por el ARNt y el ensamblaje de la cadena polipeptídica en el ribosoma para simular los efectos de mutaciones puntuales.</p>
+<h3>PASO 5: MEMORIA DE CÁLCULO BIOMOLECULAR</h3>
+<p><strong>1. ¿Cómo interaccionan el sitio A, P y E del ribosoma durante la elongación?</strong></p>
+<p>Nuevo ARNt entra en A; P sostiene la cadena antes del enlace peptídico. La cadena se transfiere al ARNt de A. Translocación mueve A→P y P→E; el descargado sale por E. El iniciador entra directamente en P. La disposición visual es E | P | A. STOP requiere factor de liberación, no ARNt.</p>
+<p><strong>2. Determinen la secuencia de aminoácidos para una hebra patrón dada.</strong></p>
+<p>Patrón ARNm: 5′-AUG AAA GCU UUU UAA-3′.</p>
+<table>
+<thead>
+<tr>
+<th>Codón 5′→3′</th>
+<th>Anticodón ideal 3′→5′</th>
+<th>Producto</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>AUG</td>
+<td>UAC</td>
+<td>Metionina / Met</td>
+</tr>
+<tr>
+<td>AAA</td>
+<td>UUU</td>
+<td>Lisina / Lys</td>
+</tr>
+<tr>
+<td>GCU</td>
+<td>CGA</td>
+<td>Alanina / Ala</td>
+</tr>
+<tr>
+<td>UUU</td>
+<td>AAA</td>
+<td>Fenilalanina / Phe</td>
+</tr>
+<tr>
+<td>UAA</td>
+<td>No corresponde</td>
+<td>STOP: liberación</td>
+</tr>
+</tbody></table>
+<p>Cadena prevista y verificada técnicamente: <strong>Met–Lys–Ala–Phe</strong>. STOP no integra la cadena; es un ejemplo didáctico, no una proteína humana identificada.</p>
+<p><strong>3. ¿Qué ocurre si la base 4 cambia de Adenina a Citosina? (Mutación de cambio de sentido o silenciosa).</strong></p>
+<p>Contando desde 1, AUG <strong>AAA</strong> GCU UUU UAA → AUG <strong>CAA</strong> GCU UUU UAA. AAA/Lisina pasa a CAA/Glutamina; anticodón UUU cambia a GUU, ambos 3′→5′. Cadena <strong>Met–Gln–Ala–Phe</strong>: <strong>cambio de sentido (missense)</strong>, no silenciosa. Se conserva el resto de bases y el marco para comparar.</p>
+<h2>SESIÓN 50: Diseño esquemático y planificación del simulador de síntesis proteica.</h2>
+<p><strong>Propósito de la sesión:</strong> Diseñar el prototipo interactivo a escala mediante planos estructurales y mecanismos de acople, determinando materiales reciclables, componentes electrónicos básicos, presupuesto, cronograma y medidas de bioseguridad.</p>
+<h3>PASO 6: DISEÑO DE LA SOLUCIÓN TECNOLÓGICA</h3>
+<p><strong>1. Diseñen la estructura del ribosoma (subunidad mayor y menor), las tarjetas de ARNt con sus anticodones y las cadenas de ARNm deslizantes.</strong></p>
+<p>El <a href="plano-prototipo.html">plano</a> muestra base 50 × 30 cm y ribosoma 25 × 15 cm (mayor 25 × 8, canal 25 × 5, menor 25 × 2). Tira 49 × 4 cm: cinco casillas de 7 cm más dos lengüetas de 7 cm. Centros E/P/A separados 7 cm; tarjetas 5 × 8 cm sobresalen arriba; aminoácidos Ø 3 cm. Añadir pestaña articulada de acople 7 × 2 cm según guía. Canal frontal 4.5–5 cm; holgura en espesor 2–3 mm ajustable. No es escala molecular. Componentes electrónicos no aplican al mecanismo seleccionado; dispositivo para web se considera disponible.</p>
+<p><strong>2. ¿Qué materiales de bajo impacto ambiental utilizarán en su diseño?</strong></p>
+<p>Cartón limpio reutilizado, cartulina y recortes; EVA opcional sustituible por cartón, velcro, hilo y pegamento frío. Trazar a mano si no hay impresora, reutilizar piezas y separar residuos. Llaves de acople de cartón sobrante.</p>
+<p><strong>3. ¿Qué instrumentos o herramientas de medición utilizarán?</strong></p>
+<p>Regla de 30–50 cm, escuadra, lápiz y regla milimetrada para canal y llaves. Tijeras escolares; cúter únicamente por adulto sobre base de corte. Verificar regla impresa de 7 cm al 100 %.</p>
+<p><strong>4. Elabora una matriz de costos, asignación de tareas por semanas y medidas preventivas durante la elaboración.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Material</th>
+<th>Cantidad prevista</th>
+<th>Estimación S/</th>
+<th>Gasto real/comprobante</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Cartón</td>
+<td>Base, piezas y llaves</td>
+<td>0 reutilizado</td>
+<td>Por completar</td>
+</tr>
+<tr>
+<td>Cartulina</td>
+<td>2 pliegos</td>
+<td>3</td>
+<td>Por completar</td>
+</tr>
+<tr>
+<td>EVA opcional</td>
+<td>Recortes</td>
+<td>2</td>
+<td>Por completar</td>
+</tr>
+<tr>
+<td>Velcro</td>
+<td>Tramo corto</td>
+<td>3</td>
+<td>Por completar</td>
+</tr>
+<tr>
+<td>Pegamento frío</td>
+<td>Envase</td>
+<td>3</td>
+<td>Por completar</td>
+</tr>
+<tr>
+<td>Hilo</td>
+<td>Tramo</td>
+<td>1</td>
+<td>Por completar</td>
+</tr>
+<tr>
+<td>Impresiones de piezas</td>
+<td>3–4 hojas</td>
+<td>2</td>
+<td>Por completar</td>
+</tr>
+<tr>
+<td>Herramientas compartidas</td>
+<td>Disponibles</td>
+<td>0 previsto</td>
+<td>Por completar si se compra</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td></td>
+<td><strong>14 estimado</strong></td>
+<td><strong>Por registrar</strong></td>
+</tr>
+</tbody></table>
+<p>No son cotizaciones. Imprimir todos los documentos y cartillas tiene costo adicional por cotizar; pueden leerse digitalmente. No se incluye equipo ni mano de obra.</p>
+<table>
+<thead>
+<tr>
+<th>Semana</th>
+<th>Tareas</th>
+<th>Responsables propuestos</th>
+<th>Prevención</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>Investigación, diagnóstico, plano y revisión web</td>
+<td>Santiago: secuencias; Joseph: plano; ambos revisan</td>
+<td>Fuentes verificables, no datos sensibles</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Corte, riel, llaves, ensamblaje y pruebas</td>
+<td>Joseph: montaje; Santiago: cotejo; alternar roles</td>
+<td>Adulto para cúter, adhesivo frío, bordes protegidos</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Validación, ajustes, fotos, costos, QR y exposición</td>
+<td>Ambos: operador/observador y defensa</td>
+<td>Consentimiento para fotos, sin ensayos UV/químicos</td>
+</tr>
+</tbody></table>
+<p>No se usan muestras biológicas. Ventilar, recoger recortes y mantener piezas pequeñas lejos de niños. Usar el <a href="cuaderno-campo.html">cuaderno</a>.</p>
+<h2>SESIÓN 51: Fabricación y ensamblaje del simulador molecular.</h2>
+<p><strong>Propósito de la sesión:</strong> Construir e implementar el modelo interactivo de traducción ribosómica acoplando sus piezas mecánicas o magnéticas según el diseño, verificando el encaje de bases nitrogenadas y aplicando normas de seguridad.</p>
+<h3>PASO 7: IMPLEMENTACIÓN DE LA SOLUCIÓN TECNOLÓGICA</h3>
+<p><strong>1. Detallen la elaboración de los tripletes de nucleótidos y el riel de deslizamiento del ribosoma.</strong></p>
+<p>Medir/reforzar base, cortar subunidades y preparar canal y separadores. Escribir AUG, AAA/CAA, GCU, UUU, UAA en casillas 7 × 4 cm con orientación. Unir por detrás sin abultar. Colocar llaves dentro de la superficie de la tira, comprobar paso por riel y alinear cada avance 7 cm. Con ribosoma fijo, deslizar tira a izquierda; lectura avanza hacia 3′. Montar tarjetas, aminoácidos y factor. Ver <a href="modelo-fisico.html">procedimiento completo</a>.</p>
+<p><strong>2. Tomen fotografías de los estudiantes armando el simulador.</strong></p>
+<p><strong>Pendiente de ejecución por Santiago y Joseph.</strong> Preparar fotos F01–F06: medición/corte; riel; llaves; ensamblaje; cadena normal; cadena mutada. Rotular fecha real, actividad, responsables, qué verifica y autorización cuando aparezcan personas. Añadir antes/después de ajustes si ocurren. No se entregan fotografías ficticias.</p>
+<p><strong>3. Realicen ajustes en los encajes magnéticos o mecánicos para asegurar que solo los anticodones complementarios puedan unirse al codón correspondiente.</strong></p>
+<p>El velcro solo sostiene. Proponemos tres llaves geométricas: codón A = triángulo, U = círculo, C = cuadrado, G = trapecio. Anticodón U tiene hueco triangular, A circular, G cuadrado, C trapezoidal. Marca lateral asimétrica impide invertir la tarjeta. La pestaña se baja sobre el codón y se levanta antes de deslizar. Probar cinco tarjetas con cinco codones distintos, sin forzar: 25 combinaciones con 5 acoples y 20 rechazos <strong>previstos</strong>. Registrar falsos acoples y rechazos, ajustar tolerancias y repetir. No afirmar selectividad sin validar físicamente.</p>
+<h2>SESIÓN 52: Pruebas de simulación genómica, fidelidad de copia y validación.</h2>
+<p><strong>Propósito de la sesión:</strong> Validar la precisión del simulador sometiéndolo a ensayos repetitivos de traducción de secuencias normales y mutadas, verificando la correcta síntesis de la cadena peptídica y ejecutando ajustes de calibración.</p>
+<h3>PASO 8: VALIDACIÓN</h3>
+<p><strong>Apliquen distintas cadenas sintéticas de ARNm en el simulador y elaboren una tabla de doble entrada para registrar sus simulaciones.</strong></p>
+<p>Registrar fecha, responsables, versión y soporte. Predecir antes de ejecutar; repetir al menos tres recorridos de cada tira física. Mantener orientación y reglas, cambiar una base por vez. La <a href="validacion-real.html">tabla editable</a> admite más cadenas, problemas, ajustes y repeticiones. No copiar resultados automáticos a observaciones escolares.</p>
+<table>
+<thead>
+<tr>
+<th>Entrada ARNm 5′→3′</th>
+<th>Predicción</th>
+<th>Resultado observado por el equipo</th>
+<th>Correcto/incorrecto</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>AUG AAA GCU UUU UAA</td>
+<td>Met–Lys–Ala–Phe; normal</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>AUG CAA GCU UUU UAA</td>
+<td>Met–Gln–Ala–Phe; missense</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>AUG AAG GCU UUU UAA</td>
+<td>Met–Lys–Ala–Phe; silenciosa</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>AUG UAA GCU UUU UAA</td>
+<td>Met; nonsense</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p><strong>Propuestas de mejora: ¿Qué modificaciones hicieron en el riel o código de colores para mejorar la visualización didáctica?</strong></p>
+<p>No se han comunicado modificaciones físicas realizadas. En el <strong>diseño</strong> se amplió el canal previsto de 4 a 4.5–5 cm y se añadió el acople geométrico; su efecto requiere prueba real. La web conserva letras, colores y orientaciones; los ajustes técnicos de alineación y desborde constan en <a href="pruebas.html">pruebas</a>. Completar tras ejecutar: “Observamos ___; cambiamos ___; repetimos ___ veces; obtuvimos ___; evidencia ___”. No presentar menor atasco como resultado sin medirlo.</p>
+<h2>SESIÓN 53: Sustentación del modelo biomolecular y síntesis proteica (Parte 1).</h2>
+<p><strong>Propósito de la sesión:</strong> Exponer el prototipo tecnológico y la cartilla científica de toma de decisiones, demostrando en vivo su funcionamiento técnico, fundamentando la biomolécula sintética producida y respondiendo las preguntas del aula.</p>
+<p>Santiago explica problema y transcripción; Joseph muestra A/P/E y ambos comparan normal/mutada en maqueta y web. Presentan cartilla y decisión preventiva. Identifican el polipéptido <strong>representado</strong>, no una biomolécula fabricada físicamente. Mostrar evidencias con límites. El <a href="proyecto.html">informe</a> contiene guion de seis minutos y preguntas de defensa.</p>
+<p>Registro posterior: fecha ___; pregunta del aula ___; respuesta ___; fuente consultada ___; mejora sugerida ___. Completar con datos reales.</p>
+<h2>SESIÓN 54: Exposición, evaluación del impacto educativo y coevaluación (Parte 2).</h2>
+<p><strong>Propósito de la sesión:</strong> Exponer el prototipo tecnológico y la cartilla científica de toma de decisiones, sustentando el valor de la ingeniería en la salud celular y evaluando el impacto preventivo del proyecto en la comunidad educativa.</p>
+<h3>PASO 9: EVALUACIÓN</h3>
+<p><strong>1. ¿De qué manera el simulador facilitará la comprensión del origen molecular de enfermedades mutagénicas y la importancia del cuidado corporal frente a la radiación solar?</strong></p>
+<p>Conecta base, codón y cadena, permitiendo discutir que ciertas mutaciones pueden contribuir a enfermedad según el contexto. La expresión de la guía “enfermedades mutagénicas” se interpreta como enfermedades asociadas a cambios o daño genético, no como enfermedades que sean por sí mismas agentes mutagénicos. No todas las enfermedades tienen esa causa ni toda mutación causa enfermedad. Se espera favorecer comprensión y fotoprotección, sin afirmar que el proyecto reduce enfermedades.</p>
+<p>Evaluar con cinco preguntas equivalentes antes/después, códigos anónimos, número de participantes y condiciones. Pedir una decisión preventiva razonada. Calcular aciertos/total × 100 con datos reales, sin generalizar muestra pequeña. Coevaluación: claridad ___; exactitud ___; manejo del modelo ___; evidencia ___; recomendación ___; fecha ___. Contrastar matriz AD y registros.</p>
+<h3>PASO 10: RESUMEN FINAL</h3>
+<p><strong>Redacten un párrafo breve (máximo 250 palabras) que sintetice:</strong></p>
+<ul>
+<li>el problema de infraestructura,</li>
+<li>el objetivo del prototipo,</li>
+<li>la metodología utilizada,</li>
+<li>los resultados de la prueba,</li>
+<li>y la conclusión principal.</li>
+</ul>
+<p>BioCode responde a la necesidad de recursos didácticos interactivos para visualizar la síntesis proteica en 5.º de la I.E. N.° 1146; las carencias concretas de infraestructura del aula aún deben documentarse. Su objetivo es representar transcripción, traducción y sustituciones puntuales con una web y una maqueta manipulable. La metodología combina revisión científica, comparación de alternativas, diseño dimensional, programación, pruebas técnicas y planificación de ensayos controlados. La versión de partida aprobó 26 pruebas científicas y 64 comprobaciones de interfaz y comportamiento; el informe actualizado registra las regresiones de esta revisión. El patrón produce Met–Lys–Ala–Phe; sustituir A→C en base 4 produce Met–Gln–Ala–Phe, cambio de sentido. Siguen pendientes construcción, gastos reales, fotografías, pruebas físicas y mediciones escolares, sin sustituirlas por resultados automáticos. La conclusión técnica es que una base puede cambiar la cadena, sin que toda mutación implique enfermedad. El valor educativo y la viabilidad material deben confirmarse con observaciones reales; la cartilla fundamenta decisiones preventivas razonables frente a UV y otros agentes.</p>
+<h2>Referencias bibliográficas ordenadas alfabéticamente</h2>
+<ul>
+<li>Alberts, B. y colaboradores. <em>Molecular Biology of the Cell</em>, 4.ª edición. “From RNA to Protein”. <a href="https://www.ncbi.nlm.nih.gov/books/NBK26829/">NCBI Bookshelf</a>.</li>
+<li>National Cancer Institute. <em>Tobacco</em>. <a href="https://www.cancer.gov/about-cancer/causes-prevention/risk/tobacco">NCI</a>.</li>
+<li>National Center for Biotechnology Information. <em>The Genetic Codes</em>, tabla 1. <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi">NCBI</a>.</li>
+<li>National Human Genome Research Institute. <em>Ribonucleic Acid (RNA) Fact Sheet</em>. <a href="https://www.genome.gov/about-genomics/educational-resources/fact-sheets/ribonucleic-acid-fact-sheet">NHGRI</a>.</li>
+<li>Organización Mundial de la Salud. <em>Ultraviolet radiation</em>. <a href="https://www.who.int/news-room/fact-sheets/detail/ultraviolet-radiation">OMS</a>.</li>
+</ul>
+<h2>Anexos con fotografías rotuladas de las pruebas de validación</h2>
+<p>Espacios preparados sin imágenes generadas ni resultados atribuidos al equipo.</p>
+<table>
+<thead>
+<tr>
+<th>Código</th>
+<th>Fotografía real por insertar</th>
+<th>Fecha real</th>
+<th>Qué verifica</th>
+<th>Archivo/autorización</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>F01</td>
+<td>Medición y corte</td>
+<td></td>
+<td>Medidas y seguridad</td>
+<td></td>
+</tr>
+<tr>
+<td>F02</td>
+<td>Riel y holgura</td>
+<td></td>
+<td>Paso de tira</td>
+<td></td>
+</tr>
+<tr>
+<td>F03</td>
+<td>Acoples correctos/incorrectos</td>
+<td></td>
+<td>Complementariedad</td>
+<td></td>
+</tr>
+<tr>
+<td>F04</td>
+<td>Estudiantes ensamblando</td>
+<td></td>
+<td>Fabricación real</td>
+<td></td>
+</tr>
+<tr>
+<td>F05</td>
+<td>Traducción normal</td>
+<td></td>
+<td>Cadena y liberación</td>
+<td></td>
+</tr>
+<tr>
+<td>F06</td>
+<td>Traducción mutada</td>
+<td></td>
+<td>Lys→Gln y base 4</td>
+<td></td>
+</tr>
+<tr>
+<td>F07</td>
+<td>Antes/después, si hay ajuste</td>
+<td></td>
+<td>Falla y repetición</td>
+<td></td>
+</tr>
+<tr>
+<td>F08</td>
+<td>QR público, cuando exista</td>
+<td></td>
+<td>Dos teléfonos</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2>Cuaderno de Campo (Diario de proyecto)</h2>
+<p>El <a href="cuaderno-campo.html">cuaderno de tres semanas</a> tiene 21 filas con fecha, sesión, actividad, responsable, observación, falla, cambio, resultado y evidencia/foto. Incluye apreciaciones semanales y siguiente decisión. Se completa durante el trabajo, no antes.</p>
+<footer>Santiago Rivas · Joseph Valderrama<br>I.E. N.° 1146 “República del Paraguay” · Material escolar. Evidencias de campo por completar por el equipo.</footer></main></body></html>

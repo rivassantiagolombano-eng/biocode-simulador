@@ -1,0 +1,439 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Pruebas de BioCode · BioCode</title><link rel="icon" href="../assets/icons/favicon.svg"><link rel="stylesheet" href="documentos.css"><script defer src="documentos.js"></script></head><body><div class="doc-toolbar"><a href="interno.html#documentacion">← BioCode · Documentación</a><button type="button" data-print>Imprimir / Guardar PDF</button></div><main><div class="doc-label">BioCode / Ciencia y Tecnología / 5.º de secundaria</div><h1>Pruebas de BioCode</h1>
+<p>Resultados técnicos obtenidos al ejecutar pruebas de software el 2026-09-21. No son pruebas de estudiantes, mediciones de aprendizaje ni evidencia de construcción física.</p>
+<h2>Resumen</h2>
+<ul>
+<li>Lógica científica: 26 pruebas PASS.</li>
+<li>Interfaz en Microsoft Edge: 51 comprobaciones PASS; sin errores de consola.</li>
+<li>Validación adicional: 8 comprobaciones PASS.</li>
+<li>Vista previa HTTP: transcripción por WebMCP verificada; entrada inválida rechazada sin modificar ARNm.</li>
+<li>Publicación GitHub: no realizada; no había sesión autenticada disponible.</li>
+</ul>
+<h2>Entradas, esperados y obtenidos</h2>
+<table>
+<thead>
+<tr>
+<th>Prueba</th>
+<th>Entrada</th>
+<th>Esperado</th>
+<th>Obtenido</th>
+<th>Estado</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>01 Cadena normal</td>
+<td>AUG AAA GCU UUU UAA</td>
+<td>[&quot;Met&quot;,&quot;Lys&quot;,&quot;Ala&quot;,&quot;Phe&quot;]</td>
+<td>[&quot;Met&quot;,&quot;Lys&quot;,&quot;Ala&quot;,&quot;Phe&quot;]</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>02 Mutación obligatoria</td>
+<td>Base 4 A→C</td>
+<td>[&quot;AUGCAAGCUUUUUAA&quot;,[&quot;Met&quot;,&quot;Gln&quot;,&quot;Ala&quot;,&quot;Phe&quot;],&quot;Cambio de sentido (missense)&quot;]</td>
+<td>[&quot;AUGCAAGCUUUUUAA&quot;,[&quot;Met&quot;,&quot;Gln&quot;,&quot;Ala&quot;,&quot;Phe&quot;],&quot;Cambio de sentido (missense)&quot;]</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>03 Anticodón orientado</td>
+<td>5′-AUG-3′</td>
+<td>&quot;UAC&quot;</td>
+<td>&quot;UAC&quot;</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>04 STOP no aminoácido ni ARNt</td>
+<td>AUGUAAAAA</td>
+<td>[[&quot;Met&quot;],true,null]</td>
+<td>[[&quot;Met&quot;],true,null]</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>05 Rechazo de caracteres</td>
+<td>AUGXAA</td>
+<td>true</td>
+<td>true</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>06 Espacios</td>
+<td>aug aaa gcu</td>
+<td>[&quot;Met&quot;,&quot;Lys&quot;,&quot;Ala&quot;]</td>
+<td>[&quot;Met&quot;,&quot;Lys&quot;,&quot;Ala&quot;]</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>07 Silenciosa generada</td>
+<td>Buscar sustitución sin cambio aminoácido</td>
+<td>&quot;Silenciosa&quot;</td>
+<td>&quot;Silenciosa&quot;</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>08 Nonsense generado</td>
+<td>Buscar sustitución a STOP</td>
+<td>&quot;Sin sentido (nonsense)&quot;</td>
+<td>&quot;Sin sentido (nonsense)&quot;</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>09 Hebra codificante</td>
+<td>5′-ATGAAAGCTTTTTAA-3′</td>
+<td>&quot;AUGAAAGCUUUUUAA&quot;</td>
+<td>&quot;AUGAAAGCUUUUUAA&quot;</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>10 Hebra molde con espacios</td>
+<td>3′-TACTTTCGAAA AATT-5′</td>
+<td>&quot;AUGAAAGCUUUUUAA&quot;</td>
+<td>&quot;AUGAAAGCUUUUUAA&quot;</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>11 Tabla completa</td>
+<td>64 tripletes</td>
+<td>[64,61,3]</td>
+<td>[64,61,3]</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>12 Todos los codones frente a fixture independiente</td>
+<td>20 familias y STOP</td>
+<td>true</td>
+<td>true</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>13 Los tres STOP</td>
+<td>UAA UAG UGA</td>
+<td>true</td>
+<td>true</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>14 Sin AUG</td>
+<td>AAAGCU</td>
+<td>[false,0]</td>
+<td>[false,0]</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>15 Marco desde primer AUG</td>
+<td>CCAUGAAAUAA</td>
+<td>[2,[&quot;Met&quot;,&quot;Lys&quot;]]</td>
+<td>[2,[&quot;Met&quot;,&quot;Lys&quot;]]</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>16 Fragmento sin STOP</td>
+<td>AUGAAAG</td>
+<td>[false,&quot;G&quot;]</td>
+<td>[false,&quot;G&quot;]</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>17 Pérdida de inicio</td>
+<td>AUGAAA, base 1→C</td>
+<td>&quot;Pérdida del codón de inicio&quot;</td>
+<td>&quot;Pérdida del codón de inicio&quot;</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>18 Pérdida de STOP</td>
+<td>AUGUAA, base 4→C</td>
+<td>&quot;Pérdida de STOP (stop-loss)&quot;</td>
+<td>&quot;Pérdida de STOP (stop-loss)&quot;</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>19 Posición después de STOP</td>
+<td>AUGUAAAAA, base 7→C</td>
+<td>&quot;Fuera de la región traducida del modelo&quot;</td>
+<td>&quot;Fuera de la región traducida del modelo&quot;</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>20 Validación posición y base</td>
+<td>0, 1.5, 999, sin cambio</td>
+<td>true</td>
+<td>true</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>21 Estados P/A/E y enlace</td>
+<td>AUGAAAUAA</td>
+<td>true</td>
+<td>true</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>22 Anticodones de todos los codones</td>
+<td>Complementariedad A-U y C-G</td>
+<td>true</td>
+<td>true</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>23 Vacío, T en ARN, U en ADN y límite</td>
+<td>Entradas inválidas</td>
+<td>true</td>
+<td>true</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>24 Marco no múltiplo de tres en mutación</td>
+<td>CCAUGAAAUAA, base 6→C</td>
+<td>&quot;Cambio de sentido (missense)&quot;</td>
+<td>&quot;Cambio de sentido (missense)&quot;</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>25 STOP fuera de marco no termina</td>
+<td>AUGCUAAGCUAA</td>
+<td>[&quot;Met&quot;,&quot;Leu&quot;,&quot;Ser&quot;]</td>
+<td>[&quot;Met&quot;,&quot;Leu&quot;,&quot;Ser&quot;]</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>26 Fragmento no se libera</td>
+<td>AUGAAA</td>
+<td>true</td>
+<td>true</td>
+<td>PASS</td>
+</tr>
+</tbody></table>
+<h2>Ejemplos generados automáticamente</h2>
+<ul>
+<li>Base 6 A→G: AAA→AAG; Silenciosa. Cadena: Met–Lys–Ala–Phe.</li>
+<li>Base 4 A→U: AAA→UAA; Sin sentido (nonsense). Cadena: Met.</li>
+</ul>
+<h2>Recorrido de interfaz</h2>
+<ul>
+<li>PASS: Carga de aplicación.</li>
+<li>PASS: 64 filas de código.</li>
+<li>PASS: Cargar ejemplo y transcribir.</li>
+<li>PASS: Molde correcto.</li>
+<li>PASS: Mensaje de ADN inválido.</li>
+<li>PASS: Iniciación en P.</li>
+<li>PASS: ARNt entrante en A.</li>
+<li>PASS: Transferencia de cadena.</li>
+<li>PASS: Translocación y E.</li>
+<li>PASS: Terminación.</li>
+<li>PASS: Cadena normal.</li>
+<li>PASS: STOP usa factor.</li>
+<li>PASS: 100 %.</li>
+<li>PASS: Missense calculado.</li>
+<li>PASS: Cambio Lys/Gln.</li>
+<li>PASS: Silenciosa en interfaz.</li>
+<li>PASS: Nonsense en interfaz.</li>
+<li>PASS: Posición inválida.</li>
+<li>PASS: Sin sustitución rechazado.</li>
+<li>PASS: ARN inválido.</li>
+<li>PASS: Sin inicio.</li>
+<li>PASS: Sin STOP ni liberación.</li>
+<li>PASS: Reinicio.</li>
+<li>PASS: Desafío oculta solución.</li>
+<li>PASS: Desafío exige selección.</li>
+<li>PASS: Respuesta 1 bloqueada tras comprobar.</li>
+<li>PASS: Respuesta 2 bloqueada tras comprobar.</li>
+<li>PASS: Respuesta 3 bloqueada tras comprobar.</li>
+<li>PASS: Respuesta 4 bloqueada tras comprobar.</li>
+<li>PASS: Respuesta 5 bloqueada tras comprobar.</li>
+<li>PASS: Puntaje, aciertos y errores.</li>
+<li>PASS: Reinicio desafío.</li>
+<li>PASS: Precisión calculada.</li>
+<li>PASS: Validación no permite más correctas que total.</li>
+<li>PASS: Persistencia de registros.</li>
+<li>PASS: Ancla #main.</li>
+<li>PASS: Ancla #inicio.</li>
+<li>PASS: Ancla #inicio.</li>
+<li>PASS: Ancla #simulador.</li>
+<li>PASS: Ancla #mutaciones.</li>
+<li>PASS: Ancla #desafio.</li>
+<li>PASS: Ancla #ciencia.</li>
+<li>PASS: Ancla #acerca.</li>
+<li>PASS: Sin desborde horizontal a 1440.</li>
+<li>PASS: Sin desborde horizontal a 1024.</li>
+<li>PASS: Sin desborde horizontal a 768.</li>
+<li>PASS: Sin desborde horizontal a 390.</li>
+<li>PASS: Sin desborde horizontal a 320.</li>
+<li>PASS: Traducción en móvil.</li>
+<li>PASS: Mutación en móvil.</li>
+<li>PASS: Sin errores de consola.</li>
+<li>PASS: Codón AAA centrado en P a 390 px.</li>
+<li>PASS: Cambiar posición borra comparación obsoleta.</li>
+<li>PASS: Secuencia de 600 bases sin desborde.</li>
+<li>PASS: Reflujo equivalente a zoom 200 % en pantalla 1440.</li>
+<li>PASS: Reiniciar por teclado.</li>
+<li>PASS: Botón imprimir invoca impresión.</li>
+<li>PASS: Recortables mantienen medida 7 cm.</li>
+<li>PASS: Controles ocultos al imprimir.</li>
+</ul>
+<h2>Revisión visual y correcciones</h2>
+<p>Se revisaron capturas de escritorio y móvil. Se corrigió la distancia entre codones para que coincidan con los centros E/P/A, calculándola desde el ancho real de los sitios. La prueba de 600 bases detectó desbordamiento móvil; se corrigió el ancho mínimo de los paneles. Las tarjetas muestran cantidad de aminoácidos para evitar desbordes con cadenas largas. Cambiar posición o base borra la comparación anterior y los errores no dejan resultados obsoletos. Se repitieron los recorridos tras estos cambios.</p>
+<h2>Reproducir</h2>
+<p>Ejecutar <code>node tests/science.test.cjs</code>. Para pruebas de navegador, instalar Playwright como herramienta de desarrollo y usar un Microsoft Edge disponible; ejecutar <code>node tests/browser.test.cjs</code> y <code>node tests/extended.test.cjs</code>. Finalmente <code>node tests/report.cjs</code> regenera este informe. El sitio por sí mismo no necesita Node ni Playwright. Los JSON incluyen hora de ejecución y resultados.</p>
+<h2>Alcance y pendientes reales</h2>
+<p>Probado en Edge de escritorio con anchos emulados 320, 390, 768, 1024 y 1440 px; se revisó reflujo a 720 px, teclado, impresión y movimiento reducido. No equivale a prueba en dispositivos físicos, todos los navegadores o lectores de pantalla. La impresión se verificó en el navegador; faltan impresión material, medición con regla, montaje y QR público. Los registros escolares comienzan en cero.</p>
+<table>
+<thead>
+<tr>
+<th>Fecha real</th>
+<th>Dispositivo o maqueta</th>
+<th>Tarea</th>
+<th>Esperado</th>
+<th>Obtenido</th>
+<th>PASS/FAIL</th>
+<th>Mejora y repetición</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Por completar</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h2>Revisión AD: documentación y regresiones</h2>
+<p>Se conserva science.js sin cambios (SHA-256 verificado). Las 134 comprobaciones documentales pasaron, además de 26 científicas, 51 de interfaz y 8 adicionales: 219 comprobaciones automatizadas PASS en esta revisión.</p>
+<p>Se comprobó: enlaces HTML, vista móvil, cuatro ensayos con observaciones vacías, alta de filas, guardado/recuperación local, impresión de datos introducidos, 21 filas del cuaderno, ocho sesiones, diez pasos, preguntas originales, resúmenes menores de 250 palabras y límites de área A4. Se ajustó la altura de filas del cuaderno tras detectar exceso de altura y se repitió la prueba con éxito. Se corrigió el generador del informe para escribir saltos de línea reales, evitando texto Markdown unido por escapes literales.</p>
+<ul>
+<li>PASS: Motor científico sin cambios.</li>
+<li>PASS: proyecto: título y contenido.</li>
+<li>PASS: proyecto: enlace interno.html#documentacion.</li>
+<li>PASS: proyecto: enlace HTML.</li>
+<li>PASS: proyecto: enlace modelo-fisico.html.</li>
+<li>PASS: proyecto: enlace HTML.</li>
+<li>PASS: proyecto: enlace validacion-real.html.</li>
+<li>PASS: proyecto: enlace HTML.</li>
+<li>PASS: proyecto: enlace sesiones-47-54.html.</li>
+<li>PASS: proyecto: enlace HTML.</li>
+<li>PASS: proyecto: enlace cuaderno-campo.html.</li>
+<li>PASS: proyecto: enlace HTML.</li>
+<li>PASS: proyecto: sin desborde móvil.</li>
+<li>PASS: pruebas: título y contenido.</li>
+<li>PASS: pruebas: enlace interno.html#documentacion.</li>
+<li>PASS: pruebas: enlace HTML.</li>
+<li>PASS: pruebas: sin desborde móvil.</li>
+<li>PASS: modelo-fisico: título y contenido.</li>
+<li>PASS: modelo-fisico: enlace interno.html#documentacion.</li>
+<li>PASS: modelo-fisico: enlace HTML.</li>
+<li>PASS: modelo-fisico: sin desborde móvil.</li>
+<li>PASS: sesiones-47-54: título y contenido.</li>
+<li>PASS: sesiones-47-54: enlace interno.html#documentacion.</li>
+<li>PASS: sesiones-47-54: enlace HTML.</li>
+<li>PASS: sesiones-47-54: enlace cartilla-salud.html.</li>
+<li>PASS: sesiones-47-54: enlace HTML.</li>
+<li>PASS: sesiones-47-54: enlace proyecto.html.</li>
+<li>PASS: sesiones-47-54: enlace HTML.</li>
+<li>PASS: sesiones-47-54: enlace plano-prototipo.html.</li>
+<li>PASS: sesiones-47-54: enlace HTML.</li>
+<li>PASS: sesiones-47-54: enlace cuaderno-campo.html.</li>
+<li>PASS: sesiones-47-54: enlace HTML.</li>
+<li>PASS: sesiones-47-54: enlace modelo-fisico.html.</li>
+<li>PASS: sesiones-47-54: enlace HTML.</li>
+<li>PASS: sesiones-47-54: enlace validacion-real.html.</li>
+<li>PASS: sesiones-47-54: enlace HTML.</li>
+<li>PASS: sesiones-47-54: enlace pruebas.html.</li>
+<li>PASS: sesiones-47-54: enlace HTML.</li>
+<li>PASS: sesiones-47-54: enlace proyecto.html.</li>
+<li>PASS: sesiones-47-54: enlace HTML.</li>
+<li>PASS: sesiones-47-54: enlace cuaderno-campo.html.</li>
+<li>PASS: sesiones-47-54: enlace HTML.</li>
+<li>PASS: sesiones-47-54: sin desborde móvil.</li>
+<li>PASS: cartilla-salud: título y contenido.</li>
+<li>PASS: cartilla-salud: enlace interno.html#documentacion.</li>
+<li>PASS: cartilla-salud: enlace HTML.</li>
+<li>PASS: cartilla-salud: sin desborde móvil.</li>
+<li>PASS: cuaderno-campo: título y contenido.</li>
+<li>PASS: cuaderno-campo: enlace interno.html#documentacion.</li>
+<li>PASS: cuaderno-campo: enlace HTML.</li>
+<li>PASS: cuaderno-campo: sin desborde móvil.</li>
+<li>PASS: plano-prototipo: título y contenido.</li>
+<li>PASS: plano-prototipo: enlace interno.html#documentacion.</li>
+<li>PASS: plano-prototipo: enlace HTML.</li>
+<li>PASS: plano-prototipo: enlace modelo-fisico.html.</li>
+<li>PASS: plano-prototipo: enlace HTML.</li>
+<li>PASS: plano-prototipo: enlace recortables.html.</li>
+<li>PASS: plano-prototipo: enlace HTML.</li>
+<li>PASS: plano-prototipo: enlace validacion-real.html.</li>
+<li>PASS: plano-prototipo: enlace HTML.</li>
+<li>PASS: plano-prototipo: sin desborde móvil.</li>
+<li>PASS: validacion-real: título y contenido.</li>
+<li>PASS: validacion-real: enlace interno.html#documentacion.</li>
+<li>PASS: validacion-real: enlace HTML.</li>
+<li>PASS: validacion-real: sin desborde móvil.</li>
+<li>PASS: manual: título y contenido.</li>
+<li>PASS: manual: enlace interno.html#documentacion.</li>
+<li>PASS: manual: enlace HTML.</li>
+<li>PASS: manual: enlace modelo-fisico.html.</li>
+<li>PASS: manual: enlace HTML.</li>
+<li>PASS: manual: enlace recortables.html.</li>
+<li>PASS: manual: enlace HTML.</li>
+<li>PASS: manual: enlace proyecto.html.</li>
+<li>PASS: manual: enlace HTML.</li>
+<li>PASS: manual: enlace proyecto.html.</li>
+<li>PASS: manual: enlace HTML.</li>
+<li>PASS: manual: enlace sesiones-47-54.html.</li>
+<li>PASS: manual: enlace HTML.</li>
+<li>PASS: manual: enlace modelo-fisico.html.</li>
+<li>PASS: manual: enlace HTML.</li>
+<li>PASS: manual: enlace plano-prototipo.html.</li>
+<li>PASS: manual: enlace HTML.</li>
+<li>PASS: manual: enlace cartilla-salud.html.</li>
+<li>PASS: manual: enlace HTML.</li>
+<li>PASS: manual: enlace cuaderno-campo.html.</li>
+<li>PASS: manual: enlace HTML.</li>
+<li>PASS: manual: enlace validacion-real.html.</li>
+<li>PASS: manual: enlace HTML.</li>
+<li>PASS: manual: enlace pruebas.html.</li>
+<li>PASS: manual: enlace HTML.</li>
+<li>PASS: manual: sin desborde móvil.</li>
+<li>PASS: Cuatro ensayos previstos.</li>
+<li>PASS: Observaciones y evaluaciones inicialmente vacías.</li>
+<li>PASS: Añadir quinta cadena.</li>
+<li>PASS: Persisten filas y observaciones propias.</li>
+<li>PASS: No completa otras observaciones.</li>
+<li>PASS: Impresión conserva texto introducido.</li>
+<li>PASS: Sesión 47 presente.</li>
+<li>PASS: Sesión 48 presente.</li>
+<li>PASS: Sesión 49 presente.</li>
+<li>PASS: Sesión 50 presente.</li>
+<li>PASS: Sesión 51 presente.</li>
+<li>PASS: Sesión 52 presente.</li>
+<li>PASS: Sesión 53 presente.</li>
+<li>PASS: Sesión 54 presente.</li>
+<li>PASS: Paso 1 presente.</li>
+<li>PASS: Paso 2 presente.</li>
+<li>PASS: Paso 3 presente.</li>
+<li>PASS: Paso 4 presente.</li>
+<li>PASS: Paso 5 presente.</li>
+<li>PASS: Paso 6 presente.</li>
+<li>PASS: Paso 7 presente.</li>
+<li>PASS: Paso 8 presente.</li>
+<li>PASS: Paso 9 presente.</li>
+<li>PASS: Paso 10 presente.</li>
+<li>PASS: Pregunta exacta ARN polimerasa.</li>
+<li>PASS: Pregunta exacta mutación.</li>
+<li>PASS: Fotografías señaladas pendientes.</li>
+<li>PASS: cartilla-salud: botón oculto al imprimir.</li>
+<li>PASS: cartilla-salud: páginas dentro del área A4 (863,775 px).</li>
+<li>PASS: cuaderno-campo: botón oculto al imprimir.</li>
+<li>PASS: cuaderno-campo: páginas dentro del área A4 (599,599,599 px).</li>
+<li>PASS: plano-prototipo: botón oculto al imprimir.</li>
+<li>PASS: plano-prototipo: páginas dentro del área A4 (699,673,598 px).</li>
+<li>PASS: 21 filas de campo.</li>
+<li>PASS: Campos de campo vacíos.</li>
+<li>PASS: Documentación retirada de interfaz pública.</li>
+<li>PASS: Seis opciones de navegación.</li>
+<li>PASS: Acerca de con autoría.</li>
+<li>PASS: Sin contenido administrativo público.</li>
+<li>PASS: Sin enlaces principales a Markdown.</li>
+<li>PASS: Resumen informe &lt;=250 palabras.</li>
+<li>PASS: Resumen guía &lt;=250 palabras.</li>
+<li>PASS: Sin errores JS.</li>
+</ul>
+<footer>Santiago Rivas · Joseph Valderrama<br>I.E. N.° 1146 “República del Paraguay” · Material escolar. Evidencias de campo por completar por el equipo.</footer></main></body></html>

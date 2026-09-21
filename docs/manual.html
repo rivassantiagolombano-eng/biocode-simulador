@@ -1,0 +1,68 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Manual de uso y publicación · BioCode</title><link rel="icon" href="../assets/icons/favicon.svg"><link rel="stylesheet" href="documentos.css"><script defer src="documentos.js"></script></head><body><div class="doc-toolbar"><a href="interno.html#documentacion">← BioCode · Documentación</a><button type="button" data-print>Imprimir / Guardar PDF</button></div><main><div class="doc-label">BioCode / Ciencia y Tecnología / 5.º de secundaria</div><h1>BioCode</h1>
+<p>Simulador Interactivo de Síntesis Proteica y Mutaciones. Proyecto híbrido de Ciencia y Tecnología, 5.º de secundaria, I.E. N.° 1146 “República del Paraguay”.</p>
+<p><strong>Integrantes:</strong></p>
+<ul>
+<li>Santiago Rivas</li>
+<li>Joseph Valderrama</li>
+</ul>
+<h2>Ejecutar y probar</h2>
+<p>Abre <code>index.html</code> con un navegador moderno. Funciona localmente sin servidor, instalación, cuentas ni internet; las fuentes externas requieren conexión. Mantén todos los archivos juntos.</p>
+<ol>
+<li>Pulsa <strong>Cargar ejemplo</strong> y <strong>Transcribir</strong>.</li>
+<li>Pulsa <strong>Iniciar traducción</strong> y después <strong>Siguiente paso</strong> hasta STOP.</li>
+<li>Verifica Met–Lys–Ala–Phe; STOP no integra la cadena.</li>
+<li>En mutaciones deja posición 4 y base C. Pulsa <strong>Crear mutación</strong> o <strong>Comparar</strong>: aparece Met–Gln–Ala–Phe, missense.</li>
+<li>Responde los cinco desafíos. Los registros escolares se consultan aparte en docs/interno.html.</li>
+</ol>
+<p>Pruebas de lógica con Node.js, opcional para desarrollo: <code>node tests/science.test.cjs</code>. La aplicación no necesita Node. Las pruebas de navegador adicionales usan Playwright como herramienta de desarrollo, no como dependencia del sitio.</p>
+<h2>Tecnologías y características</h2>
+<p>HTML5, CSS3 y JavaScript Vanilla, sin dependencias de ejecución. Transcripción de ambas hebras; 64 codones; anticodones orientados; estados A/P/E; cadena progresiva; STOP por factor; mutaciones silenciosas, missense y nonsense; pérdida de inicio/STOP; comparación; cinco retos; almacenamiento local de validación; accesibilidad por teclado y movimiento reducido. Límite didáctico de 600 bases por secuencia.</p>
+<h2>Caso científico</h2>
+<p>ADN codificante 5′-ATGAAAGCTTTTTAA-3′; molde 3′-TACTTTCGAAAAATT-5′. ARNm 5′-AUG AAA GCU UUU UAA-3′. Traducción normal Met–Lys–Ala–Phe. Base 4 A→C produce CAA/Glutamina y cadena Met–Gln–Ala–Phe. Se usa el código estándar, primer AUG y primer STOP en el marco. No representa necesariamente una proteína humana real.</p>
+<h2>Estructura</h2>
+<pre><code class="language-text">index.html             Interfaz completa
+style.css              Estilo responsive y animaciones
+science.js             Motor científico centralizado
+script.js              Controles, desafío y registros
+README.md              Manual y publicación
+.nojekyll              Sitio estático para Pages
+assets/icons/          Icono BioCode
+assets/images/         Capturas y evidencias futuras
+docs/modelo-fisico.md   Construcción, materiales y QR
+docs/recortables.html   Tarjetas imprimibles
+docs/proyecto.md        Informe, cronograma y defensa
+docs/pruebas.md         Registro de pruebas
+tests/                 Pruebas automatizadas
+</code></pre>
+<h2>Publicar mediante GitHub Pages</h2>
+<p>La publicación requiere una cuenta de GitHub autorizada. No se necesita instalar nada para subir desde la web.</p>
+<ol>
+<li>Inicia sesión en GitHub y crea un repositorio público llamado <code>biocode-simulador</code>.</li>
+<li>Selecciona <strong>Add file → Upload files</strong>. Arrastra el <strong>contenido</strong> de esta carpeta, no una carpeta envolvente: <code>index.html</code> debe quedar en la raíz, junto con <code>style.css</code>, <code>script.js</code>, <code>science.js</code>, <code>assets</code> y <code>docs</code>. Confirma con <strong>Commit changes</strong>.</li>
+<li>Ve a <strong>Settings → Pages → Build and deployment</strong>. Selecciona <strong>Deploy from a branch</strong>, rama <code>main</code>, carpeta <strong>/(root)</strong> y <strong>Save</strong>.</li>
+<li>Espera a que GitHub indique despliegue satisfactorio y abre la URL indicada en esa pantalla. Normalmente sigue el formato <code>https://TU-USUARIO.github.io/biocode-simulador/</code>; este patrón no es una URL publicada de este proyecto.</li>
+<li>Ejecuta los pasos de prueba de este README en la URL pública y revisa también desde celular. Si aparece 404, comprueba nombre del repositorio, rama, raíz y estado de despliegue.</li>
+<li>Copia la URL verificada en <code>docs/modelo-fisico.md</code> y genera el QR siguiendo esa guía.</li>
+</ol>
+<p>Documentación oficial: <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site">Configurar una fuente de publicación de GitHub Pages</a>.</p>
+<h2>Capturas y evidencia</h2>
+<p>Las capturas técnicas se guardan en <code>assets/images/</code>. Añadan fotografías reales de la maqueta, pruebas con fechas, presupuesto ejecutado y observaciones. No confundan capturas del software con evidencia de construcción o aprendizaje. Los datos escolares comienzan en cero.</p>
+<h2>Construcción y exposición</h2>
+<p>Consulta <a href="modelo-fisico.html">modelo físico</a>, imprime <a href="recortables.html">recortables</a> al 100 % y utiliza el guion de seis minutos de <a href="proyecto.html">proyecto</a>. La calificación depende de la rúbrica real y de la evidencia recogida por el equipo.</p>
+<h2>Revisión orientada a Destacado (AD)</h2>
+<p>La documentación del equipo se conserva en HTML en <a href="interno.html">Archivo interno</a>, sin enlaces desde la interfaz pública. Se conserva el motor <code>science.js</code> sin cambios y todas las funciones existentes.</p>
+<ul>
+<li><a href="proyecto.html">Informe y matriz de los 17 criterios</a>.</li>
+<li><a href="sesiones-47-54.html">Guía completa: sesiones 47–54 y pasos 1–10</a>, con preguntas originales y respuestas.</li>
+<li><a href="modelo-fisico.html">Modelo físico</a>, con canal de 4.5–5 cm para tira de 4 cm y acople mecánico previsto.</li>
+<li><a href="plano-prototipo.html">Plano y flujo del software</a>.</li>
+<li><a href="cartilla-salud.html">Cartilla científica A4</a>.</li>
+<li><a href="cuaderno-campo.html">Cuaderno de campo: tres semanas, 21 filas</a>, A4 horizontal.</li>
+<li><a href="validacion-real.html">Validación real editable</a>: cuatro ensayos previstos; observaciones vacías. Permite añadir filas, guardar localmente e imprimir sin calcular observaciones por el estudiante.</li>
+<li><a href="pruebas.html">Pruebas actualizadas</a>.</li>
+</ul>
+<p>Los botones de los documentos imprimen o permiten guardar PDF desde el navegador. Para el cuaderno y tabla de validación se usa A4 horizontal; los demás, A4 vertical. Las medidas de los recortables deben imprimirse al 100 %.</p>
+<p>Las fuentes Markdown se conservan. Para regenerar HTML: disponer de <code>marked</code> como herramienta de desarrollo y ejecutar <code>node tests/build-docs.mjs</code>; el sitio entregado no requiere esa dependencia. Pruebas adicionales: <code>node tests/docs.test.cjs</code> con Playwright y Edge. Después de repetir las pruebas, <code>node tests/report.cjs</code> actualiza el informe y el generador vuelve a crear HTML.</p>
+<h2>Interfaz pública simplificada</h2>
+<p>La navegación es Inicio, Simulador, Mutaciones, Desafíos, Aprender y Acerca de. El contenido preventivo está integrado en Aprender. No se enlazan documentos escolares desde index.html. Los registros y todos los documentos permanecen en docs/; abrir docs/interno.html directamente para preparar entregas. Esto retira los enlaces, no añade control de acceso: los archivos siguen accesibles por su URL si se publican.</p>
+<footer>Santiago Rivas · Joseph Valderrama<br>I.E. N.° 1146 “República del Paraguay” · Material escolar. Evidencias de campo por completar por el equipo.</footer></main></body></html>

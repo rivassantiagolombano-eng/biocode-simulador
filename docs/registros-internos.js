@@ -1,0 +1,8 @@
+'use strict';
+const $=id=>document.getElementById(id);
+function notice(id,text,error=false){$(id).textContent=text;$(id).classList.toggle('error',error);}
+function guard(id,fn){try{fn();}catch(e){notice(id,e.message,true);}}
+function validation(total,pass){if(!Number.isInteger(total)||!Number.isInteger(pass)||total<0||pass<0||pass>total)throw Error('Usa enteros no negativos; correctas no puede superar al total.');return total?pass+' / '+total+' = '+(100*pass/total).toFixed(1)+' % de precisión. Datos escolares ingresados por el usuario.':'Sin mediciones escolares registradas.';}
+$('save-validation').onclick=()=>guard('validation-result',()=>{if($('test-total').value===''||$('test-pass').value==='')throw Error('Completa ambos campos.');const total=Number($('test-total').value),pass=Number($('test-pass').value);notice('validation-result',validation(total,pass));try{localStorage.setItem('biocode-validation',JSON.stringify({total,pass}));}catch{notice('validation-result',validation(total,pass)+' El navegador no permite guardar.');}});
+$('save-improvements').onclick=()=>{try{localStorage.setItem('biocode-improvements',$('improvements').value);notice('improvement-status','Registro guardado en este navegador.');}catch{notice('improvement-status','No fue posible guardar; copia tu registro al informe.',true);}};
+try{const stored=JSON.parse(localStorage.getItem('biocode-validation'));if(stored){$('test-total').value=stored.total;$('test-pass').value=stored.pass;notice('validation-result',validation(stored.total,stored.pass));}$('improvements').value=localStorage.getItem('biocode-improvements')||'';}catch{/* El simulador funciona sin almacenamiento. */}
