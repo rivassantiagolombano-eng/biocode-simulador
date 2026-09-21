@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-21T02:54:02.390Z",
+  "date": "2026-09-21T03:29:58.228Z",
   "checks": [
     {
       "name": "Carga de aplicación",
@@ -171,6 +171,46 @@
     },
     {
       "name": "Ancla #acerca",
+      "status": "PASS"
+    },
+    {
+      "name": "Ancla #avanzado",
+      "status": "PASS"
+    },
+    {
+      "name": "Ancla #simulador",
+      "status": "PASS"
+    },
+    {
+      "name": "Ancla #avanzado",
+      "status": "PASS"
+    },
+    {
+      "name": "Ancla #ribosoma",
+      "status": "PASS"
+    },
+    {
+      "name": "Ancla #avanzado",
+      "status": "PASS"
+    },
+    {
+      "name": "Ancla #mutaciones",
+      "status": "PASS"
+    },
+    {
+      "name": "Ancla #desafio",
+      "status": "PASS"
+    },
+    {
+      "name": "Ancla #mutaciones",
+      "status": "PASS"
+    },
+    {
+      "name": "Ancla #simulador",
+      "status": "PASS"
+    },
+    {
+      "name": "Ancla #avanzado",
       "status": "PASS"
     },
     {

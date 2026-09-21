@@ -1,0 +1,414 @@
+{
+  "date": "2026-09-21T03:32:36.717Z",
+  "checks": [
+    {
+      "name": "Bienvenida sin formularios científicos",
+      "status": "PASS"
+    },
+    {
+      "name": "Una sola pantalla visible",
+      "status": "PASS"
+    },
+    {
+      "name": "Solo ADN, sin ribosoma",
+      "status": "PASS"
+    },
+    {
+      "name": "ADN inválido no avanza",
+      "status": "PASS"
+    },
+    {
+      "name": "Transcripción correcta",
+      "status": "PASS"
+    },
+    {
+      "name": "Ribosoma separado del ADN",
+      "status": "PASS"
+    },
+    {
+      "name": "Primera acción detecta AUG",
+      "status": "PASS"
+    },
+    {
+      "name": "ARNt llega a P antes de cadena",
+      "status": "PASS"
+    },
+    {
+      "name": "Cadena inicia en Met",
+      "status": "PASS"
+    },
+    {
+      "name": "Codón siguiente detectado",
+      "status": "PASS"
+    },
+    {
+      "name": "Llega Lisina",
+      "status": "PASS"
+    },
+    {
+      "name": "Crece cadena Met Lys",
+      "status": "PASS"
+    },
+    {
+      "name": "Cadena completa correcta",
+      "status": "PASS"
+    },
+    {
+      "name": "STOP explícito",
+      "status": "PASS"
+    },
+    {
+      "name": "Missense correcto",
+      "status": "PASS"
+    },
+    {
+      "name": "Comparación normal y mutada",
+      "status": "PASS"
+    },
+    {
+      "name": "Solo dos codones y dos aminoácidos resaltados",
+      "status": "PASS"
+    },
+    {
+      "name": "Cambiar letra invalida comparación",
+      "status": "PASS"
+    },
+    {
+      "name": "Silenciosa",
+      "status": "PASS"
+    },
+    {
+      "name": "Nonsense",
+      "status": "PASS"
+    },
+    {
+      "name": "Sustitución idéntica rechazada",
+      "status": "PASS"
+    },
+    {
+      "name": "Seis tarjetas educativas",
+      "status": "PASS"
+    },
+    {
+      "name": "Ver más abre explicación",
+      "status": "PASS"
+    },
+    {
+      "name": "Ver más abre explicación",
+      "status": "PASS"
+    },
+    {
+      "name": "Ver más abre explicación",
+      "status": "PASS"
+    },
+    {
+      "name": "Ver más abre explicación",
+      "status": "PASS"
+    },
+    {
+      "name": "Ver más abre explicación",
+      "status": "PASS"
+    },
+    {
+      "name": "Ver más abre explicación",
+      "status": "PASS"
+    },
+    {
+      "name": "Tabla completa conservada",
+      "status": "PASS"
+    },
+    {
+      "name": "Hebra molde conservada",
+      "status": "PASS"
+    },
+    {
+      "name": "Anticodón en modo avanzado",
+      "status": "PASS"
+    },
+    {
+      "name": "Sitio E conservado",
+      "status": "PASS"
+    },
+    {
+      "name": "Sin AUG no anuncia éxito",
+      "status": "PASS"
+    },
+    {
+      "name": "Sin STOP se reconoce fragmento",
+      "status": "PASS"
+    },
+    {
+      "name": "Desafío requiere selección",
+      "status": "PASS"
+    },
+    {
+      "name": "Reto 1 bloqueado",
+      "status": "PASS"
+    },
+    {
+      "name": "Reto 2 bloqueado",
+      "status": "PASS"
+    },
+    {
+      "name": "Reto 3 bloqueado",
+      "status": "PASS"
+    },
+    {
+      "name": "Reto 4 bloqueado",
+      "status": "PASS"
+    },
+    {
+      "name": "Reto 5 bloqueado",
+      "status": "PASS"
+    },
+    {
+      "name": "Desafíos completados",
+      "status": "PASS"
+    },
+    {
+      "name": "inicio sin desborde a 1440",
+      "status": "PASS"
+    },
+    {
+      "name": "simulador sin desborde a 1440",
+      "status": "PASS"
+    },
+    {
+      "name": "arnm sin desborde a 1440",
+      "status": "PASS"
+    },
+    {
+      "name": "ribosoma sin desborde a 1440",
+      "status": "PASS"
+    },
+    {
+      "name": "proteina sin desborde a 1440",
+      "status": "PASS"
+    },
+    {
+      "name": "mutaciones sin desborde a 1440",
+      "status": "PASS"
+    },
+    {
+      "name": "ciencia sin desborde a 1440",
+      "status": "PASS"
+    },
+    {
+      "name": "desafio sin desborde a 1440",
+      "status": "PASS"
+    },
+    {
+      "name": "acerca sin desborde a 1440",
+      "status": "PASS"
+    },
+    {
+      "name": "avanzado sin desborde a 1440",
+      "status": "PASS"
+    },
+    {
+      "name": "inicio sin desborde a 1024",
+      "status": "PASS"
+    },
+    {
+      "name": "simulador sin desborde a 1024",
+      "status": "PASS"
+    },
+    {
+      "name": "arnm sin desborde a 1024",
+      "status": "PASS"
+    },
+    {
+      "name": "ribosoma sin desborde a 1024",
+      "status": "PASS"
+    },
+    {
+      "name": "proteina sin desborde a 1024",
+      "status": "PASS"
+    },
+    {
+      "name": "mutaciones sin desborde a 1024",
+      "status": "PASS"
+    },
+    {
+      "name": "ciencia sin desborde a 1024",
+      "status": "PASS"
+    },
+    {
+      "name": "desafio sin desborde a 1024",
+      "status": "PASS"
+    },
+    {
+      "name": "acerca sin desborde a 1024",
+      "status": "PASS"
+    },
+    {
+      "name": "avanzado sin desborde a 1024",
+      "status": "PASS"
+    },
+    {
+      "name": "inicio sin desborde a 768",
+      "status": "PASS"
+    },
+    {
+      "name": "simulador sin desborde a 768",
+      "status": "PASS"
+    },
+    {
+      "name": "arnm sin desborde a 768",
+      "status": "PASS"
+    },
+    {
+      "name": "ribosoma sin desborde a 768",
+      "status": "PASS"
+    },
+    {
+      "name": "proteina sin desborde a 768",
+      "status": "PASS"
+    },
+    {
+      "name": "mutaciones sin desborde a 768",
+      "status": "PASS"
+    },
+    {
+      "name": "ciencia sin desborde a 768",
+      "status": "PASS"
+    },
+    {
+      "name": "desafio sin desborde a 768",
+      "status": "PASS"
+    },
+    {
+      "name": "acerca sin desborde a 768",
+      "status": "PASS"
+    },
+    {
+      "name": "avanzado sin desborde a 768",
+      "status": "PASS"
+    },
+    {
+      "name": "inicio sin desborde a 390",
+      "status": "PASS"
+    },
+    {
+      "name": "simulador sin desborde a 390",
+      "status": "PASS"
+    },
+    {
+      "name": "arnm sin desborde a 390",
+      "status": "PASS"
+    },
+    {
+      "name": "ribosoma sin desborde a 390",
+      "status": "PASS"
+    },
+    {
+      "name": "proteina sin desborde a 390",
+      "status": "PASS"
+    },
+    {
+      "name": "mutaciones sin desborde a 390",
+      "status": "PASS"
+    },
+    {
+      "name": "ciencia sin desborde a 390",
+      "status": "PASS"
+    },
+    {
+      "name": "desafio sin desborde a 390",
+      "status": "PASS"
+    },
+    {
+      "name": "acerca sin desborde a 390",
+      "status": "PASS"
+    },
+    {
+      "name": "avanzado sin desborde a 390",
+      "status": "PASS"
+    },
+    {
+      "name": "inicio sin desborde a 320",
+      "status": "PASS"
+    },
+    {
+      "name": "simulador sin desborde a 320",
+      "status": "PASS"
+    },
+    {
+      "name": "arnm sin desborde a 320",
+      "status": "PASS"
+    },
+    {
+      "name": "ribosoma sin desborde a 320",
+      "status": "PASS"
+    },
+    {
+      "name": "proteina sin desborde a 320",
+      "status": "PASS"
+    },
+    {
+      "name": "mutaciones sin desborde a 320",
+      "status": "PASS"
+    },
+    {
+      "name": "ciencia sin desborde a 320",
+      "status": "PASS"
+    },
+    {
+      "name": "desafio sin desborde a 320",
+      "status": "PASS"
+    },
+    {
+      "name": "acerca sin desborde a 320",
+      "status": "PASS"
+    },
+    {
+      "name": "avanzado sin desborde a 320",
+      "status": "PASS"
+    },
+    {
+      "name": "Reinicio guiado en celular",
+      "status": "PASS"
+    },
+    {
+      "name": "Volver funciona",
+      "status": "PASS"
+    },
+    {
+      "name": "Navegación Inicio",
+      "status": "PASS"
+    },
+    {
+      "name": "Navegación Simulación",
+      "status": "PASS"
+    },
+    {
+      "name": "Navegación Mutaciones",
+      "status": "PASS"
+    },
+    {
+      "name": "Navegación Desafíos",
+      "status": "PASS"
+    },
+    {
+      "name": "Navegación Aprender",
+      "status": "PASS"
+    },
+    {
+      "name": "Navegación Acerca de",
+      "status": "PASS"
+    },
+    {
+      "name": "Documentación escolar sin enlaces públicos",
+      "status": "PASS"
+    },
+    {
+      "name": "Todas las anclas existen",
+      "status": "PASS"
+    },
+    {
+      "name": "Sin errores de consola",
+      "status": "PASS"
+    }
+  ],
+  "errors": []
+}
