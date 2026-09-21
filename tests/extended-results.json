@@ -1,0 +1,37 @@
+{
+  "date": "2026-09-21T02:54:00.648Z",
+  "checks": [
+    {
+      "name": "Codón AAA centrado en P a 390 px",
+      "status": "PASS"
+    },
+    {
+      "name": "Cambiar posición borra comparación obsoleta",
+      "status": "PASS"
+    },
+    {
+      "name": "Secuencia de 600 bases sin desborde",
+      "status": "PASS"
+    },
+    {
+      "name": "Reflujo equivalente a zoom 200 % en pantalla 1440",
+      "status": "PASS"
+    },
+    {
+      "name": "Reiniciar por teclado",
+      "status": "PASS"
+    },
+    {
+      "name": "Botón imprimir invoca impresión",
+      "status": "PASS"
+    },
+    {
+      "name": "Recortables mantienen medida 7 cm",
+      "status": "PASS"
+    },
+    {
+      "name": "Controles ocultos al imprimir",
+      "status": "PASS"
+    }
+  ]
+}

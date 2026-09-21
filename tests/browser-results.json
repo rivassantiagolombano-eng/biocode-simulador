@@ -1,0 +1,210 @@
+{
+  "date": "2026-09-21T02:54:02.390Z",
+  "checks": [
+    {
+      "name": "Carga de aplicación",
+      "status": "PASS"
+    },
+    {
+      "name": "64 filas de código",
+      "status": "PASS"
+    },
+    {
+      "name": "Cargar ejemplo y transcribir",
+      "status": "PASS"
+    },
+    {
+      "name": "Molde correcto",
+      "status": "PASS"
+    },
+    {
+      "name": "Mensaje de ADN inválido",
+      "status": "PASS"
+    },
+    {
+      "name": "Iniciación en P",
+      "status": "PASS"
+    },
+    {
+      "name": "ARNt entrante en A",
+      "status": "PASS"
+    },
+    {
+      "name": "Transferencia de cadena",
+      "status": "PASS"
+    },
+    {
+      "name": "Translocación y E",
+      "status": "PASS"
+    },
+    {
+      "name": "Terminación",
+      "status": "PASS"
+    },
+    {
+      "name": "Cadena normal",
+      "status": "PASS"
+    },
+    {
+      "name": "STOP usa factor",
+      "status": "PASS"
+    },
+    {
+      "name": "100 %",
+      "status": "PASS"
+    },
+    {
+      "name": "Missense calculado",
+      "status": "PASS"
+    },
+    {
+      "name": "Cambio Lys/Gln",
+      "status": "PASS"
+    },
+    {
+      "name": "Silenciosa en interfaz",
+      "status": "PASS"
+    },
+    {
+      "name": "Nonsense en interfaz",
+      "status": "PASS"
+    },
+    {
+      "name": "Posición inválida",
+      "status": "PASS"
+    },
+    {
+      "name": "Sin sustitución rechazado",
+      "status": "PASS"
+    },
+    {
+      "name": "ARN inválido",
+      "status": "PASS"
+    },
+    {
+      "name": "Sin inicio",
+      "status": "PASS"
+    },
+    {
+      "name": "Sin STOP ni liberación",
+      "status": "PASS"
+    },
+    {
+      "name": "Reinicio",
+      "status": "PASS"
+    },
+    {
+      "name": "Desafío oculta solución",
+      "status": "PASS"
+    },
+    {
+      "name": "Desafío exige selección",
+      "status": "PASS"
+    },
+    {
+      "name": "Respuesta 1 bloqueada tras comprobar",
+      "status": "PASS"
+    },
+    {
+      "name": "Respuesta 2 bloqueada tras comprobar",
+      "status": "PASS"
+    },
+    {
+      "name": "Respuesta 3 bloqueada tras comprobar",
+      "status": "PASS"
+    },
+    {
+      "name": "Respuesta 4 bloqueada tras comprobar",
+      "status": "PASS"
+    },
+    {
+      "name": "Respuesta 5 bloqueada tras comprobar",
+      "status": "PASS"
+    },
+    {
+      "name": "Puntaje, aciertos y errores",
+      "status": "PASS"
+    },
+    {
+      "name": "Reinicio desafío",
+      "status": "PASS"
+    },
+    {
+      "name": "Precisión calculada",
+      "status": "PASS"
+    },
+    {
+      "name": "Validación no permite más correctas que total",
+      "status": "PASS"
+    },
+    {
+      "name": "Persistencia de registros",
+      "status": "PASS"
+    },
+    {
+      "name": "Ancla #main",
+      "status": "PASS"
+    },
+    {
+      "name": "Ancla #inicio",
+      "status": "PASS"
+    },
+    {
+      "name": "Ancla #inicio",
+      "status": "PASS"
+    },
+    {
+      "name": "Ancla #simulador",
+      "status": "PASS"
+    },
+    {
+      "name": "Ancla #mutaciones",
+      "status": "PASS"
+    },
+    {
+      "name": "Ancla #desafio",
+      "status": "PASS"
+    },
+    {
+      "name": "Ancla #ciencia",
+      "status": "PASS"
+    },
+    {
+      "name": "Ancla #acerca",
+      "status": "PASS"
+    },
+    {
+      "name": "Sin desborde horizontal a 1440",
+      "status": "PASS"
+    },
+    {
+      "name": "Sin desborde horizontal a 1024",
+      "status": "PASS"
+    },
+    {
+      "name": "Sin desborde horizontal a 768",
+      "status": "PASS"
+    },
+    {
+      "name": "Sin desborde horizontal a 390",
+      "status": "PASS"
+    },
+    {
+      "name": "Sin desborde horizontal a 320",
+      "status": "PASS"
+    },
+    {
+      "name": "Traducción en móvil",
+      "status": "PASS"
+    },
+    {
+      "name": "Mutación en móvil",
+      "status": "PASS"
+    },
+    {
+      "name": "Sin errores de consola",
+      "status": "PASS"
+    }
+  ],
+  "errors": []
+}

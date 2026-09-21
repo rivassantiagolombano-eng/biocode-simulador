@@ -1,0 +1,106 @@
+{
+  "original": "AUGAAAGCUUUUUAA",
+  "changed": "AUGUAAGCUUUUUAA",
+  "pos": 4,
+  "base": "U",
+  "normal": {
+    "sequence": "AUGAAAGCUUUUUAA",
+    "start": 0,
+    "rows": [
+      {
+        "codon": "AUG",
+        "aa": {
+          "symbol": "M",
+          "name": "Metionina",
+          "short": "Met"
+        },
+        "index": 0,
+        "anticodon": "UAC"
+      },
+      {
+        "codon": "AAA",
+        "aa": {
+          "symbol": "K",
+          "name": "Lisina",
+          "short": "Lys"
+        },
+        "index": 3,
+        "anticodon": "UUU"
+      },
+      {
+        "codon": "GCU",
+        "aa": {
+          "symbol": "A",
+          "name": "Alanina",
+          "short": "Ala"
+        },
+        "index": 6,
+        "anticodon": "CGA"
+      },
+      {
+        "codon": "UUU",
+        "aa": {
+          "symbol": "F",
+          "name": "Fenilalanina",
+          "short": "Phe"
+        },
+        "index": 9,
+        "anticodon": "AAA"
+      },
+      {
+        "codon": "UAA",
+        "aa": {
+          "symbol": "*",
+          "name": "STOP",
+          "short": "STOP"
+        },
+        "index": 12,
+        "anticodon": null
+      }
+    ],
+    "chain": [
+      "Met",
+      "Lys",
+      "Ala",
+      "Phe"
+    ],
+    "stop": true,
+    "tail": "",
+    "message": "Terminación por STOP."
+  },
+  "mutated": {
+    "sequence": "AUGUAAGCUUUUUAA",
+    "start": 0,
+    "rows": [
+      {
+        "codon": "AUG",
+        "aa": {
+          "symbol": "M",
+          "name": "Metionina",
+          "short": "Met"
+        },
+        "index": 0,
+        "anticodon": "UAC"
+      },
+      {
+        "codon": "UAA",
+        "aa": {
+          "symbol": "*",
+          "name": "STOP",
+          "short": "STOP"
+        },
+        "index": 3,
+        "anticodon": null
+      }
+    ],
+    "chain": [
+      "Met"
+    ],
+    "stop": true,
+    "tail": "",
+    "message": "Terminación por STOP."
+  },
+  "type": "Sin sentido (nonsense)",
+  "oldCodon": "AAA",
+  "newCodon": "UAA"
+}

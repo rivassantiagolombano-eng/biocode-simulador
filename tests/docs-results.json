@@ -1,0 +1,542 @@
+{
+  "date": "2026-09-21T02:54:02.020Z",
+  "checks": [
+    {
+      "name": "Motor científico sin cambios",
+      "status": "PASS"
+    },
+    {
+      "name": "proyecto: título y contenido",
+      "status": "PASS"
+    },
+    {
+      "name": "proyecto: enlace interno.html#documentacion",
+      "status": "PASS"
+    },
+    {
+      "name": "proyecto: enlace HTML",
+      "status": "PASS"
+    },
+    {
+      "name": "proyecto: enlace modelo-fisico.html",
+      "status": "PASS"
+    },
+    {
+      "name": "proyecto: enlace HTML",
+      "status": "PASS"
+    },
+    {
+      "name": "proyecto: enlace validacion-real.html",
+      "status": "PASS"
+    },
+    {
+      "name": "proyecto: enlace HTML",
+      "status": "PASS"
+    },
+    {
+      "name": "proyecto: enlace sesiones-47-54.html",
+      "status": "PASS"
+    },
+    {
+      "name": "proyecto: enlace HTML",
+      "status": "PASS"
+    },
+    {
+      "name": "proyecto: enlace cuaderno-campo.html",
+      "status": "PASS"
+    },
+    {
+      "name": "proyecto: enlace HTML",
+      "status": "PASS"
+    },
+    {
+      "name": "proyecto: sin desborde móvil",
+      "status": "PASS"
+    },
+    {
+      "name": "pruebas: título y contenido",
+      "status": "PASS"
+    },
+    {
+      "name": "pruebas: enlace interno.html#documentacion",
+      "status": "PASS"
+    },
+    {
+      "name": "pruebas: enlace HTML",
+      "status": "PASS"
+    },
+    {
+      "name": "pruebas: sin desborde móvil",
+      "status": "PASS"
+    },
+    {
+      "name": "modelo-fisico: título y contenido",
+      "status": "PASS"
+    },
+    {
+      "name": "modelo-fisico: enlace interno.html#documentacion",
+      "status": "PASS"
+    },
+    {
+      "name": "modelo-fisico: enlace HTML",
+      "status": "PASS"
+    },
+    {
+      "name": "modelo-fisico: sin desborde móvil",
+      "status": "PASS"
+    },
+    {
+      "name": "sesiones-47-54: título y contenido",
+      "status": "PASS"
+    },
+    {
+      "name": "sesiones-47-54: enlace interno.html#documentacion",
+      "status": "PASS"
+    },
+    {
+      "name": "sesiones-47-54: enlace HTML",
+      "status": "PASS"
+    },
+    {
+      "name": "sesiones-47-54: enlace cartilla-salud.html",
+      "status": "PASS"
+    },
+    {
+      "name": "sesiones-47-54: enlace HTML",
+      "status": "PASS"
+    },
+    {
+      "name": "sesiones-47-54: enlace proyecto.html",
+      "status": "PASS"
+    },
+    {
+      "name": "sesiones-47-54: enlace HTML",
+      "status": "PASS"
+    },
+    {
+      "name": "sesiones-47-54: enlace plano-prototipo.html",
+      "status": "PASS"
+    },
+    {
+      "name": "sesiones-47-54: enlace HTML",
+      "status": "PASS"
+    },
+    {
+      "name": "sesiones-47-54: enlace cuaderno-campo.html",
+      "status": "PASS"
+    },
+    {
+      "name": "sesiones-47-54: enlace HTML",
+      "status": "PASS"
+    },
+    {
+      "name": "sesiones-47-54: enlace modelo-fisico.html",
+      "status": "PASS"
+    },
+    {
+      "name": "sesiones-47-54: enlace HTML",
+      "status": "PASS"
+    },
+    {
+      "name": "sesiones-47-54: enlace validacion-real.html",
+      "status": "PASS"
+    },
+    {
+      "name": "sesiones-47-54: enlace HTML",
+      "status": "PASS"
+    },
+    {
+      "name": "sesiones-47-54: enlace pruebas.html",
+      "status": "PASS"
+    },
+    {
+      "name": "sesiones-47-54: enlace HTML",
+      "status": "PASS"
+    },
+    {
+      "name": "sesiones-47-54: enlace proyecto.html",
+      "status": "PASS"
+    },
+    {
+      "name": "sesiones-47-54: enlace HTML",
+      "status": "PASS"
+    },
+    {
+      "name": "sesiones-47-54: enlace cuaderno-campo.html",
+      "status": "PASS"
+    },
+    {
+      "name": "sesiones-47-54: enlace HTML",
+      "status": "PASS"
+    },
+    {
+      "name": "sesiones-47-54: sin desborde móvil",
+      "status": "PASS"
+    },
+    {
+      "name": "cartilla-salud: título y contenido",
+      "status": "PASS"
+    },
+    {
+      "name": "cartilla-salud: enlace interno.html#documentacion",
+      "status": "PASS"
+    },
+    {
+      "name": "cartilla-salud: enlace HTML",
+      "status": "PASS"
+    },
+    {
+      "name": "cartilla-salud: sin desborde móvil",
+      "status": "PASS"
+    },
+    {
+      "name": "cuaderno-campo: título y contenido",
+      "status": "PASS"
+    },
+    {
+      "name": "cuaderno-campo: enlace interno.html#documentacion",
+      "status": "PASS"
+    },
+    {
+      "name": "cuaderno-campo: enlace HTML",
+      "status": "PASS"
+    },
+    {
+      "name": "cuaderno-campo: sin desborde móvil",
+      "status": "PASS"
+    },
+    {
+      "name": "plano-prototipo: título y contenido",
+      "status": "PASS"
+    },
+    {
+      "name": "plano-prototipo: enlace interno.html#documentacion",
+      "status": "PASS"
+    },
+    {
+      "name": "plano-prototipo: enlace HTML",
+      "status": "PASS"
+    },
+    {
+      "name": "plano-prototipo: enlace modelo-fisico.html",
+      "status": "PASS"
+    },
+    {
+      "name": "plano-prototipo: enlace HTML",
+      "status": "PASS"
+    },
+    {
+      "name": "plano-prototipo: enlace recortables.html",
+      "status": "PASS"
+    },
+    {
+      "name": "plano-prototipo: enlace HTML",
+      "status": "PASS"
+    },
+    {
+      "name": "plano-prototipo: enlace validacion-real.html",
+      "status": "PASS"
+    },
+    {
+      "name": "plano-prototipo: enlace HTML",
+      "status": "PASS"
+    },
+    {
+      "name": "plano-prototipo: sin desborde móvil",
+      "status": "PASS"
+    },
+    {
+      "name": "validacion-real: título y contenido",
+      "status": "PASS"
+    },
+    {
+      "name": "validacion-real: enlace interno.html#documentacion",
+      "status": "PASS"
+    },
+    {
+      "name": "validacion-real: enlace HTML",
+      "status": "PASS"
+    },
+    {
+      "name": "validacion-real: sin desborde móvil",
+      "status": "PASS"
+    },
+    {
+      "name": "manual: título y contenido",
+      "status": "PASS"
+    },
+    {
+      "name": "manual: enlace interno.html#documentacion",
+      "status": "PASS"
+    },
+    {
+      "name": "manual: enlace HTML",
+      "status": "PASS"
+    },
+    {
+      "name": "manual: enlace modelo-fisico.html",
+      "status": "PASS"
+    },
+    {
+      "name": "manual: enlace HTML",
+      "status": "PASS"
+    },
+    {
+      "name": "manual: enlace recortables.html",
+      "status": "PASS"
+    },
+    {
+      "name": "manual: enlace HTML",
+      "status": "PASS"
+    },
+    {
+      "name": "manual: enlace proyecto.html",
+      "status": "PASS"
+    },
+    {
+      "name": "manual: enlace HTML",
+      "status": "PASS"
+    },
+    {
+      "name": "manual: enlace proyecto.html",
+      "status": "PASS"
+    },
+    {
+      "name": "manual: enlace HTML",
+      "status": "PASS"
+    },
+    {
+      "name": "manual: enlace sesiones-47-54.html",
+      "status": "PASS"
+    },
+    {
+      "name": "manual: enlace HTML",
+      "status": "PASS"
+    },
+    {
+      "name": "manual: enlace modelo-fisico.html",
+      "status": "PASS"
+    },
+    {
+      "name": "manual: enlace HTML",
+      "status": "PASS"
+    },
+    {
+      "name": "manual: enlace plano-prototipo.html",
+      "status": "PASS"
+    },
+    {
+      "name": "manual: enlace HTML",
+      "status": "PASS"
+    },
+    {
+      "name": "manual: enlace cartilla-salud.html",
+      "status": "PASS"
+    },
+    {
+      "name": "manual: enlace HTML",
+      "status": "PASS"
+    },
+    {
+      "name": "manual: enlace cuaderno-campo.html",
+      "status": "PASS"
+    },
+    {
+      "name": "manual: enlace HTML",
+      "status": "PASS"
+    },
+    {
+      "name": "manual: enlace validacion-real.html",
+      "status": "PASS"
+    },
+    {
+      "name": "manual: enlace HTML",
+      "status": "PASS"
+    },
+    {
+      "name": "manual: enlace pruebas.html",
+      "status": "PASS"
+    },
+    {
+      "name": "manual: enlace HTML",
+      "status": "PASS"
+    },
+    {
+      "name": "manual: sin desborde móvil",
+      "status": "PASS"
+    },
+    {
+      "name": "Cuatro ensayos previstos",
+      "status": "PASS"
+    },
+    {
+      "name": "Observaciones y evaluaciones inicialmente vacías",
+      "status": "PASS"
+    },
+    {
+      "name": "Añadir quinta cadena",
+      "status": "PASS"
+    },
+    {
+      "name": "Persisten filas y observaciones propias",
+      "status": "PASS"
+    },
+    {
+      "name": "No completa otras observaciones",
+      "status": "PASS"
+    },
+    {
+      "name": "Impresión conserva texto introducido",
+      "status": "PASS"
+    },
+    {
+      "name": "Sesión 47 presente",
+      "status": "PASS"
+    },
+    {
+      "name": "Sesión 48 presente",
+      "status": "PASS"
+    },
+    {
+      "name": "Sesión 49 presente",
+      "status": "PASS"
+    },
+    {
+      "name": "Sesión 50 presente",
+      "status": "PASS"
+    },
+    {
+      "name": "Sesión 51 presente",
+      "status": "PASS"
+    },
+    {
+      "name": "Sesión 52 presente",
+      "status": "PASS"
+    },
+    {
+      "name": "Sesión 53 presente",
+      "status": "PASS"
+    },
+    {
+      "name": "Sesión 54 presente",
+      "status": "PASS"
+    },
+    {
+      "name": "Paso 1 presente",
+      "status": "PASS"
+    },
+    {
+      "name": "Paso 2 presente",
+      "status": "PASS"
+    },
+    {
+      "name": "Paso 3 presente",
+      "status": "PASS"
+    },
+    {
+      "name": "Paso 4 presente",
+      "status": "PASS"
+    },
+    {
+      "name": "Paso 5 presente",
+      "status": "PASS"
+    },
+    {
+      "name": "Paso 6 presente",
+      "status": "PASS"
+    },
+    {
+      "name": "Paso 7 presente",
+      "status": "PASS"
+    },
+    {
+      "name": "Paso 8 presente",
+      "status": "PASS"
+    },
+    {
+      "name": "Paso 9 presente",
+      "status": "PASS"
+    },
+    {
+      "name": "Paso 10 presente",
+      "status": "PASS"
+    },
+    {
+      "name": "Pregunta exacta ARN polimerasa",
+      "status": "PASS"
+    },
+    {
+      "name": "Pregunta exacta mutación",
+      "status": "PASS"
+    },
+    {
+      "name": "Fotografías señaladas pendientes",
+      "status": "PASS"
+    },
+    {
+      "name": "cartilla-salud: botón oculto al imprimir",
+      "status": "PASS"
+    },
+    {
+      "name": "cartilla-salud: páginas dentro del área A4 (863,775 px)",
+      "status": "PASS"
+    },
+    {
+      "name": "cuaderno-campo: botón oculto al imprimir",
+      "status": "PASS"
+    },
+    {
+      "name": "cuaderno-campo: páginas dentro del área A4 (599,599,599 px)",
+      "status": "PASS"
+    },
+    {
+      "name": "plano-prototipo: botón oculto al imprimir",
+      "status": "PASS"
+    },
+    {
+      "name": "plano-prototipo: páginas dentro del área A4 (699,673,598 px)",
+      "status": "PASS"
+    },
+    {
+      "name": "21 filas de campo",
+      "status": "PASS"
+    },
+    {
+      "name": "Campos de campo vacíos",
+      "status": "PASS"
+    },
+    {
+      "name": "Documentación retirada de interfaz pública",
+      "status": "PASS"
+    },
+    {
+      "name": "Seis opciones de navegación",
+      "status": "PASS"
+    },
+    {
+      "name": "Acerca de con autoría",
+      "status": "PASS"
+    },
+    {
+      "name": "Sin contenido administrativo público",
+      "status": "PASS"
+    },
+    {
+      "name": "Sin enlaces principales a Markdown",
+      "status": "PASS"
+    },
+    {
+      "name": "Resumen informe <=250 palabras",
+      "status": "PASS"
+    },
+    {
+      "name": "Resumen guía <=250 palabras",
+      "status": "PASS"
+    },
+    {
+      "name": "Sin errores JS",
+      "status": "PASS"
+    }
+  ],
+  "errors": []
+}

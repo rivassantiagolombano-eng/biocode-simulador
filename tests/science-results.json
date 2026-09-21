@@ -1,0 +1,275 @@
+{
+  "date": "2026-09-21T02:53:41.934Z",
+  "tests": [
+    {
+      "name": "01 Cadena normal",
+      "input": "AUG AAA GCU UUU UAA",
+      "expected": [
+        "Met",
+        "Lys",
+        "Ala",
+        "Phe"
+      ],
+      "actual": [
+        "Met",
+        "Lys",
+        "Ala",
+        "Phe"
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "02 Mutación obligatoria",
+      "input": "Base 4 A→C",
+      "expected": [
+        "AUGCAAGCUUUUUAA",
+        [
+          "Met",
+          "Gln",
+          "Ala",
+          "Phe"
+        ],
+        "Cambio de sentido (missense)"
+      ],
+      "actual": [
+        "AUGCAAGCUUUUUAA",
+        [
+          "Met",
+          "Gln",
+          "Ala",
+          "Phe"
+        ],
+        "Cambio de sentido (missense)"
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "03 Anticodón orientado",
+      "input": "5′-AUG-3′",
+      "expected": "UAC",
+      "actual": "UAC",
+      "status": "PASS"
+    },
+    {
+      "name": "04 STOP no aminoácido ni ARNt",
+      "input": "AUGUAAAAA",
+      "expected": [
+        [
+          "Met"
+        ],
+        true,
+        null
+      ],
+      "actual": [
+        [
+          "Met"
+        ],
+        true,
+        null
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "05 Rechazo de caracteres",
+      "input": "AUGXAA",
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    },
+    {
+      "name": "06 Espacios",
+      "input": " aug aaa gcu ",
+      "expected": [
+        "Met",
+        "Lys",
+        "Ala"
+      ],
+      "actual": [
+        "Met",
+        "Lys",
+        "Ala"
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "07 Silenciosa generada",
+      "input": "Buscar sustitución sin cambio aminoácido",
+      "expected": "Silenciosa",
+      "actual": "Silenciosa",
+      "status": "PASS"
+    },
+    {
+      "name": "08 Nonsense generado",
+      "input": "Buscar sustitución a STOP",
+      "expected": "Sin sentido (nonsense)",
+      "actual": "Sin sentido (nonsense)",
+      "status": "PASS"
+    },
+    {
+      "name": "09 Hebra codificante",
+      "input": "5′-ATGAAAGCTTTTTAA-3′",
+      "expected": "AUGAAAGCUUUUUAA",
+      "actual": "AUGAAAGCUUUUUAA",
+      "status": "PASS"
+    },
+    {
+      "name": "10 Hebra molde con espacios",
+      "input": "3′-TACTTTCGAAA AATT-5′",
+      "expected": "AUGAAAGCUUUUUAA",
+      "actual": "AUGAAAGCUUUUUAA",
+      "status": "PASS"
+    },
+    {
+      "name": "11 Tabla completa",
+      "input": "64 tripletes",
+      "expected": [
+        64,
+        61,
+        3
+      ],
+      "actual": [
+        64,
+        61,
+        3
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "12 Todos los codones frente a fixture independiente",
+      "input": "20 familias y STOP",
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    },
+    {
+      "name": "13 Los tres STOP",
+      "input": "UAA UAG UGA",
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    },
+    {
+      "name": "14 Sin AUG",
+      "input": "AAAGCU",
+      "expected": [
+        false,
+        0
+      ],
+      "actual": [
+        false,
+        0
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "15 Marco desde primer AUG",
+      "input": "CCAUGAAAUAA",
+      "expected": [
+        2,
+        [
+          "Met",
+          "Lys"
+        ]
+      ],
+      "actual": [
+        2,
+        [
+          "Met",
+          "Lys"
+        ]
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "16 Fragmento sin STOP",
+      "input": "AUGAAAG",
+      "expected": [
+        false,
+        "G"
+      ],
+      "actual": [
+        false,
+        "G"
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "17 Pérdida de inicio",
+      "input": "AUGAAA, base 1→C",
+      "expected": "Pérdida del codón de inicio",
+      "actual": "Pérdida del codón de inicio",
+      "status": "PASS"
+    },
+    {
+      "name": "18 Pérdida de STOP",
+      "input": "AUGUAA, base 4→C",
+      "expected": "Pérdida de STOP (stop-loss)",
+      "actual": "Pérdida de STOP (stop-loss)",
+      "status": "PASS"
+    },
+    {
+      "name": "19 Posición después de STOP",
+      "input": "AUGUAAAAA, base 7→C",
+      "expected": "Fuera de la región traducida del modelo",
+      "actual": "Fuera de la región traducida del modelo",
+      "status": "PASS"
+    },
+    {
+      "name": "20 Validación posición y base",
+      "input": "0, 1.5, 999, sin cambio",
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    },
+    {
+      "name": "21 Estados P/A/E y enlace",
+      "input": "AUGAAAUAA",
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    },
+    {
+      "name": "22 Anticodones de todos los codones",
+      "input": "Complementariedad A-U y C-G",
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    },
+    {
+      "name": "23 Vacío, T en ARN, U en ADN y límite",
+      "input": "Entradas inválidas",
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    },
+    {
+      "name": "24 Marco no múltiplo de tres en mutación",
+      "input": "CCAUGAAAUAA, base 6→C",
+      "expected": "Cambio de sentido (missense)",
+      "actual": "Cambio de sentido (missense)",
+      "status": "PASS"
+    },
+    {
+      "name": "25 STOP fuera de marco no termina",
+      "input": "AUGCUAAGCUAA",
+      "expected": [
+        "Met",
+        "Leu",
+        "Ser"
+      ],
+      "actual": [
+        "Met",
+        "Leu",
+        "Ser"
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "26 Fragmento no se libera",
+      "input": "AUGAAA",
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    }
+  ]
+}

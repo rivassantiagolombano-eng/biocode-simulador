@@ -1,0 +1,139 @@
+{
+  "original": "AUGAAAGCUUUUUAA",
+  "changed": "AUGAAGGCUUUUUAA",
+  "pos": 6,
+  "base": "G",
+  "normal": {
+    "sequence": "AUGAAAGCUUUUUAA",
+    "start": 0,
+    "rows": [
+      {
+        "codon": "AUG",
+        "aa": {
+          "symbol": "M",
+          "name": "Metionina",
+          "short": "Met"
+        },
+        "index": 0,
+        "anticodon": "UAC"
+      },
+      {
+        "codon": "AAA",
+        "aa": {
+          "symbol": "K",
+          "name": "Lisina",
+          "short": "Lys"
+        },
+        "index": 3,
+        "anticodon": "UUU"
+      },
+      {
+        "codon": "GCU",
+        "aa": {
+          "symbol": "A",
+          "name": "Alanina",
+          "short": "Ala"
+        },
+        "index": 6,
+        "anticodon": "CGA"
+      },
+      {
+        "codon": "UUU",
+        "aa": {
+          "symbol": "F",
+          "name": "Fenilalanina",
+          "short": "Phe"
+        },
+        "index": 9,
+        "anticodon": "AAA"
+      },
+      {
+        "codon": "UAA",
+        "aa": {
+          "symbol": "*",
+          "name": "STOP",
+          "short": "STOP"
+        },
+        "index": 12,
+        "anticodon": null
+      }
+    ],
+    "chain": [
+      "Met",
+      "Lys",
+      "Ala",
+      "Phe"
+    ],
+    "stop": true,
+    "tail": "",
+    "message": "Terminación por STOP."
+  },
+  "mutated": {
+    "sequence": "AUGAAGGCUUUUUAA",
+    "start": 0,
+    "rows": [
+      {
+        "codon": "AUG",
+        "aa": {
+          "symbol": "M",
+          "name": "Metionina",
+          "short": "Met"
+        },
+        "index": 0,
+        "anticodon": "UAC"
+      },
+      {
+        "codon": "AAG",
+        "aa": {
+          "symbol": "K",
+          "name": "Lisina",
+          "short": "Lys"
+        },
+        "index": 3,
+        "anticodon": "UUC"
+      },
+      {
+        "codon": "GCU",
+        "aa": {
+          "symbol": "A",
+          "name": "Alanina",
+          "short": "Ala"
+        },
+        "index": 6,
+        "anticodon": "CGA"
+      },
+      {
+        "codon": "UUU",
+        "aa": {
+          "symbol": "F",
+          "name": "Fenilalanina",
+          "short": "Phe"
+        },
+        "index": 9,
+        "anticodon": "AAA"
+      },
+      {
+        "codon": "UAA",
+        "aa": {
+          "symbol": "*",
+          "name": "STOP",
+          "short": "STOP"
+        },
+        "index": 12,
+        "anticodon": null
+      }
+    ],
+    "chain": [
+      "Met",
+      "Lys",
+      "Ala",
+      "Phe"
+    ],
+    "stop": true,
+    "tail": "",
+    "message": "Terminación por STOP."
+  },
+  "type": "Silenciosa",
+  "oldCodon": "AAA",
+  "newCodon": "AAG"
+}
