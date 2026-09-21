@@ -1,5 +1,13 @@
 # BioCode
 
+## Experiencia guiada
+
+La interfaz comienza con una bienvenida y muestra una tarea por pantalla: ADN → ARNm → ribosoma → cadena → mutación → comparación. `experience.js` adapta exclusivamente la presentación de los resultados de `science.js`; el motor científico permanece sin cambios. `experience.css` define el diseño del recorrido y la adaptación móvil.
+
+El modo avanzado conserva los controles originales, las dos hebras, orientaciones, anticodones, edición de ARNm, tabla de 64 codones y detalles de traducción. Aprender contiene seis tarjetas con explicaciones ampliables. La documentación escolar sigue en `docs/`, sin enlaces desde la aplicación pública.
+
+Pruebas del rediseño: `node tests/science.test.cjs` (26), `node tests/experience.test.cjs` (102), `node tests/browser.test.cjs` (61) y `node tests/extended.test.cjs` (8). Las tres suites de interfaz requieren Playwright y Microsoft Edge. Capturas nuevas: `assets/images/desktop.png`, `mobile.png`, `desktop-home.png` y `mobile-home.png`.
+
 Simulador Interactivo de Síntesis Proteica y Mutaciones. Proyecto híbrido de Ciencia y Tecnología, 5.º de secundaria, I.E. N.° 1146 “República del Paraguay”.
 
 **Integrantes:**
