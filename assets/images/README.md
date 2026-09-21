@@ -1,0 +1,1 @@
+Las capturas reales de la aplicación se guardan aquí. Las fotografías de construcción deben ser añadidas por los integrantes y contar con autorización de las personas visibles. No se generan fotografías de evidencia.
