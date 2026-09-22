@@ -2,11 +2,13 @@
 
 ## Experiencia guiada
 
-La interfaz comienza con una bienvenida y muestra una tarea por pantalla: ADN → ARNm → ribosoma → cadena → mutación → comparación. `experience.js` adapta exclusivamente la presentación de los resultados de `science.js`; el motor científico permanece sin cambios. `experience.css` define el diseño del recorrido y la adaptación móvil.
+La interfaz comienza con una bienvenida y cinco pasos: ADN → transcripción → ARNm → traducción → proteína. Después se puede experimentar con mutaciones en ADN y comparar su efecto en ARNm, codones y aminoácidos. `experience.js` utiliza los resultados de `science.js`; el motor científico permanece sin cambios. `experience.css` define el diseño del recorrido y la adaptación móvil.
+
+`learning.js` agrega el desafío de ADN complementario con pistas y reintentos, y tres preguntas finales con puntuación. El inicio incluye autoría y el diagrama «¿Qué estamos demostrando?».
 
 El modo avanzado conserva los controles originales, las dos hebras, orientaciones, anticodones, edición de ARNm, tabla de 64 codones y detalles de traducción. Aprender contiene seis tarjetas con explicaciones ampliables. La documentación escolar sigue en `docs/`, sin enlaces desde la aplicación pública.
 
-Pruebas del rediseño: `node tests/science.test.cjs` (26), `node tests/experience.test.cjs` (102), `node tests/browser.test.cjs` (61) y `node tests/extended.test.cjs` (8). Las tres suites de interfaz requieren Playwright y Microsoft Edge. Capturas nuevas: `assets/images/desktop.png`, `mobile.png`, `desktop-home.png` y `mobile-home.png`.
+Pruebas de esta actualización: `node tests/science.test.cjs` (26), `node tests/experience.test.cjs` (102), `node tests/browser.test.cjs` (62) y `node tests/learning.test.cjs` (64). Las suites de interfaz requieren Playwright y Microsoft Edge. Capturas nuevas: `assets/images/desktop.png`, `mobile.png`, `desktop-home.png`, `mobile-home.png` y `mobile-learning.png`.
 
 Simulador Interactivo de Síntesis Proteica y Mutaciones. Proyecto híbrido de Ciencia y Tecnología, 5.º de secundaria, I.E. N.° 1146 “República del Paraguay”.
 
